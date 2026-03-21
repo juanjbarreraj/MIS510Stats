@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 14 Quiz</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Chapter 14</h1>
+      <p class="subtitle">Quiz</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Chapter 14 Quiz</h1>
+      <p>Quiz exercises and answers</p>
+    </section>
+
+    <section class="section-card">
+      <h2 class="section-title">Section C: Chapter 14 Quiz</h2>
+
+      <div class="question-block">
+        <h3>Exercise 14-002 Algo (One-Way Analysis of Variance)</h3>
+
+        <p>
+          This exercise is a "what-if" analysis designed to determine what happens to the test statistic when
+          the means, variances, and sample sizes change.
+        </p>
+
+        <p>You are given the following statistics:</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th rowspan="2">Statistic</th>
+              <th colspan="3">Treatment</th>
+            </tr>
+            <tr>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><em>n</em></td><td>3</td><td>3</td><td>3</td></tr>
+            <tr><td>x̄</td><td>19</td><td>21</td><td>24</td></tr>
+            <tr><td>s²</td><td>11</td><td>11</td><td>11</td></tr>
+          </tbody>
+        </table>
+
+        <div class="sub-question">
+          <p><strong>(a) Complete the ANOVA table. (Round your answers to two decimal places.)</strong></p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Source</th>
+                <th>Degrees of Freedom</th>
+                <th>Sum of Squares</th>
+                <th>Mean Squares</th>
+                <th><em>F</em></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Treatments</td>
+                <td><span class="correct">2</span></td>
+                <td><span class="correct">38</span></td>
+                <td><span class="correct">19</span></td>
+                <td><span class="correct">1.73</span></td>
+              </tr>
+              <tr>
+                <td>Error</td>
+                <td><span class="correct">6</span></td>
+                <td><span class="correct">66</span></td>
+                <td><span class="correct">11</span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Total</td>
+                <td><span class="correct">8</span></td>
+                <td><span class="correct">104</span></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(b) Repeat part (a) changing the variances to 26 each. (Round your answers to two decimal places.)</strong></p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Source</th>
+                <th>Degrees of Freedom</th>
+                <th>Sum of Squares</th>
+                <th>Mean Squares</th>
+                <th><em>F</em></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Treatments</td>
+                <td><span class="correct">2</span></td>
+                <td><span class="correct">38</span></td>
+                <td><span class="correct">19</span></td>
+                <td><span class="correct">0.73</span></td>
+              </tr>
+              <tr>
+                <td>Error</td>
+                <td><span class="correct">6</span></td>
+                <td><span class="correct">156</span></td>
+                <td><span class="correct">26</span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Total</td>
+                <td><span class="correct">8</span></td>
+                <td><span class="correct">194</span></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(c) Describe the effect on the <em>F</em>-statistic of increasing the sample variances.</strong></p>
+          <p class="answer-line">The <em>F</em>-statistic <span class="correct">decreases</span>.</p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 14-006 Algo (One-Way Analysis of Variance)</h3>
+
+        <p>
+          Many college and university students obtain summer jobs. A statistics professor wanted to determine whether students in
+          different degree programs earn different amounts. A random sample of 5 students in the B.A., B.Sc., and B.B.A. programs
+          were asked to report what they earned the previous summer. The results (in $1,000s) are listed here.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>B.A.</th>
+              <th>B.Sc.</th>
+              <th>B.B.A.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>3.4</td><td>4.0</td><td>4.1</td></tr>
+            <tr><td>2.6</td><td>5.0</td><td>6.3</td></tr>
+            <tr><td>4.5</td><td>4.0</td><td>6.2</td></tr>
+            <tr><td>5.3</td><td>6.3</td><td>6.0</td></tr>
+            <tr><td>3.8</td><td>4.7</td><td>6.3</td></tr>
+          </tbody>
+        </table>
+
+        <div class="sub-question">
+          <p><strong>Can the professor infer at the 5% significance level that students in different degree programs differ in their summer earnings?</strong></p>
+
+          <p><strong>State the null and alternative hypotheses.</strong></p>
+          <ol class="options">
+            <li>H<sub>0</sub>: At least two means differ. H<sub>1</sub>: μ<sub>1</sub> ≠ μ<sub>2</sub> ≠ μ<sub>3</sub></li>
+            <li>H<sub>0</sub>: μ<sub>1</sub> = μ<sub>2</sub> = μ<sub>3</sub>. H<sub>1</sub>: At least two means differ.</li>
+            <li>H<sub>0</sub>: μ<sub>1</sub> ≠ μ<sub>2</sub> ≠ μ<sub>3</sub>. H<sub>1</sub>: At least two means are the same.</li>
+            <li>H<sub>0</sub>: At least two means differ. H<sub>1</sub>: μ<sub>1</sub> = μ<sub>2</sub> = μ<sub>3</sub></li>
+          </ol>
+
+          <p class="answer-line">Correct Answer: <span class="correct">ii</span></p>
+          <p class="answer-line">Test statistic: <span class="correct">4.54</span></p>
+          <p class="answer-line">p-value: <span class="correct">0.0340</span></p>
+          <p class="answer-line">
+            There <span class="correct">is</span> enough evidence to conclude that students in different degree programs differ in their summer earnings.
+          </p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 14-007 Algo (One-Way Analysis of Variance)</h3>
+
+        <p>
+          Spam is the price we pay for being able to easily communicate by e-mail. Does spam affect everyone equally?
+          In a preliminary study, university professors, administrators, and students were randomly sampled. Each person
+          was asked to count the number of spam messages received that day. The results follow.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Professors</th>
+              <th>Administrators</th>
+              <th>Students</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>6</td><td>6</td><td>13</td></tr>
+            <tr><td>3</td><td>8</td><td>5</td></tr>
+            <tr><td>0</td><td>13</td><td>4</td></tr>
+            <tr><td>4</td><td>17</td><td>19</td></tr>
+            <tr><td>19</td><td>11</td><td>16</td></tr>
+          </tbody>
+        </table>
+
+        <div class="sub-question">
+          <p><strong>Can we infer at the 5% significance level that the differing university communities differ in the amount of spam they receive in their e-mails?</strong></p>
+
+          <p><strong>State the null and alternative hypotheses.</strong></p>
+          <ol class="options">
+            <li>H<sub>0</sub>: At least two means differ. H<sub>1</sub>: μ<sub>1</sub> ≠ μ<sub>2</sub> ≠ μ<sub>3</sub></li>
+            <li>H<sub>0</sub>: μ<sub>1</sub> ≠ μ<sub>2</sub> ≠ μ<sub>3</sub>. H<sub>1</sub>: At least two means are the same.</li>
+            <li>H<sub>0</sub>: At least two means differ. H<sub>1</sub>: μ<sub>1</sub> = μ<sub>2</sub> = μ<sub>3</sub></li>
+            <li>H<sub>0</sub>: μ<sub>1</sub> = μ<sub>2</sub> = μ<sub>3</sub>. H<sub>1</sub>: At least two means differ.</li>
+          </ol>
+
+          <p class="answer-line">Correct Answer: <span class="correct">iv</span></p>
+          <p class="answer-line">Test statistic: <span class="correct">0.99</span></p>
+          <p class="answer-line">p-value: <span class="correct">0.3999</span></p>
+          <p class="answer-line">
+            There <span class="correct">is not</span> enough evidence to conclude that the differing university communities differ in the amount of spam they receive in their e-mails.
+          </p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 14-067 Algo (Multiple Comparisons)</h3>
+
+        <p>You may need to use the appropriate appendix table to answer this question.</p>
+
+        <p><strong>(a) Use Fisher's LSD method with α = 0.05 to determine which population means differ in the following problem. (Round your answers for the LSD values to two decimal places.)</strong></p>
+
+        <ul class="options">
+          <li><em>k</em> = 3</li>
+          <li><em>n</em><sub>1</sub> = 9</li>
+          <li><em>n</em><sub>2</sub> = 9</li>
+          <li><em>n</em><sub>3</sub> = 9</li>
+          <li>MSE = 704</li>
+          <li>x̄<sub>1</sub> = 128.6</li>
+          <li>x̄<sub>2</sub> = 101.3</li>
+          <li>x̄<sub>3</sub> = 135.8</li>
+        </ul>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Treatment</th>
+              <th>LSD</th>
+              <th>Absolute Difference</th>
+              <th>Population Means Differ?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><em>i</em> = 1, <em>j</em> = 2</td>
+              <td><span class="correct">25.81</span></td>
+              <td><span class="correct">27.3</span></td>
+              <td><span class="correct">Yes</span></td>
+            </tr>
+            <tr>
+              <td><em>i</em> = 1, <em>j</em> = 3</td>
+              <td><span class="correct">25.81</span></td>
+              <td><span class="correct">7.2</span></td>
+              <td><span class="correct">No</span></td>
+            </tr>
+            <tr>
+              <td><em>i</em> = 2, <em>j</em> = 3</td>
+              <td><span class="correct">25.81</span></td>
+              <td><span class="correct">34.5</span></td>
+              <td><span class="correct">Yes</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p><strong>(b) Repeat part (a) using the Bonferroni adjustment. (Use technology to calculate any critical values. Round your answers for the LSD values to two decimal places.)</strong></p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Treatment</th>
+              <th>LSD</th>
+              <th>Absolute Difference</th>
+              <th>Population Means Differ?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><em>i</em> = 1, <em>j</em> = 2</td>
+              <td><span class="correct">32.19</span></td>
+              <td><span class="correct">27.3</span></td>
+              <td><span class="correct">No</span></td>
+            </tr>
+            <tr>
+              <td><em>i</em> = 1, <em>j</em> = 3</td>
+              <td><span class="correct">32.19</span></td>
+              <td><span class="correct">7.2</span></td>
+              <td><span class="correct">No</span></td>
+            </tr>
+            <tr>
+              <td><em>i</em> = 2, <em>j</em> = 3</td>
+              <td><span class="correct">32.19</span></td>
+              <td><span class="correct">34.5</span></td>
+              <td><span class="correct">Yes</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="sub-question">
+          <p><strong>(c) Repeat part (a) using Tukey's multiple comparison method.</strong></p>
+          <p class="answer-line">ω = <span class="correct">31.24</span></p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Treatment</th>
+                <th>Absolute Difference</th>
+                <th>Population Means Differ?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><em>i</em> = 1, <em>j</em> = 2</td><td><span class="correct">27.3</span></td><td><span class="correct">No</span></td></tr>
+              <tr><td><em>i</em> = 1, <em>j</em> = 3</td><td><span class="correct">7.2</span></td><td><span class="correct">No</span></td></tr>
+              <tr><td><em>i</em> = 2, <em>j</em> = 3</td><td><span class="correct">34.5</span></td><td><span class="correct">Yes</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 14-069 Algo (Multiple Comparisons)</h3>
+
+        <p>You may need to use the appropriate appendix table to answer this question.</p>
+        <p>Use a 5% significance level.</p>
+
+        <p>
+          A consumer organization was concerned about the differences between the advertised sizes of containers and the actual amount of product.
+          In a preliminary study, six packages of three different brands of margarine that are supposed to contain 500 ml were measured.
+          The differences from 500 ml are listed here.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Brand 1</th>
+              <th>Brand 2</th>
+              <th>Brand 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>2</td><td>1</td></tr>
+            <tr><td>3</td><td>2</td><td>2</td></tr>
+            <tr><td>4</td><td>4</td><td>3</td></tr>
+            <tr><td>0</td><td>3</td><td>2</td></tr>
+            <tr><td>1</td><td>0</td><td>3</td></tr>
+            <tr><td>0</td><td>3</td><td>4</td></tr>
+          </tbody>
+        </table>
+
+        <div class="sub-question">
+          <p><strong>(a) Apply Tukey's method to determine which brands differ.</strong></p>
+          <p class="answer-line">ω = <span class="correct">2.07</span> ml</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Treatment</th>
+                <th>Absolute Difference (in ml)</th>
+                <th>Population Means Differ?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Brand 1, Brand 2</td><td><span class="correct">0.83</span> ml</td><td><span class="correct">No</span></td></tr>
+              <tr><td>Brand 1, Brand 3</td><td><span class="correct">1.00</span> ml</td><td><span class="correct">No</span></td></tr>
+              <tr><td>Brand 2, Brand 3</td><td><span class="correct">0.17</span> ml</td><td><span class="correct">No</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(b) Use the Bonferroni method to compare Brands 1 and 2 and Brands 1 and 3. (Use technology to calculate any critical values. Round your answers to two decimal places.)</strong></p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Treatment</th>
+                <th>LSD (in ml)</th>
+                <th>Absolute Difference (in ml)</th>
+                <th>Population Means Differ?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Brand 1, Brand 2</td><td><span class="correct">1.98</span> ml</td><td><span class="correct">0.83</span> ml</td><td><span class="correct">No</span></td></tr>
+              <tr><td>Brand 1, Brand 3</td><td><span class="correct">1.98</span> ml</td><td><span class="correct">1.00</span> ml</td><td><span class="correct">No</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 14-070 Algo (Multiple Comparisons)</h3>
+
+        <p>You may need to use the appropriate appendix table to answer this question.</p>
+
+        <p>
+          Many college and university students obtain summer jobs. A statistics professor wanted to determine whether students in different
+          degree programs earn different amounts. A random sample of 5 students in the B.A., B.Sc., and B.B.A. programs were asked to report
+          what they earned the previous summer. The results (in $1,000s) are listed here.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>B.A.</th>
+              <th>B.Sc.</th>
+              <th>B.B.A.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>3.4</td><td>3.8</td><td>4.1</td></tr>
+            <tr><td>2.3</td><td>5.1</td><td>6.0</td></tr>
+            <tr><td>4.5</td><td>4.0</td><td>6.4</td></tr>
+            <tr><td>5.4</td><td>6.2</td><td>5.9</td></tr>
+            <tr><td>4.0</td><td>4.9</td><td>6.5</td></tr>
+          </tbody>
+        </table>
+
+        <div class="sub-question">
+          <p><strong>(a) Employ Fisher's LSD method to determine which degrees differ (Use α = 0.10). (Round your answers for the LSD values to two decimal places.)</strong></p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Treatment</th>
+                <th>LSD (in $1,000s)</th>
+                <th>Absolute Difference (in $1,000s)</th>
+                <th>Population Means Differ?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>B.A., B.Sc.</td><td>$ <span class="correct">1.17</span> thousand</td><td>$ <span class="correct">0.88</span> thousand</td><td><span class="correct">No</span></td></tr>
+              <tr><td>B.A., B.B.A.</td><td>$ <span class="correct">1.17</span> thousand</td><td>$ <span class="correct">1.86</span> thousand</td><td><span class="correct">Yes</span></td></tr>
+              <tr><td>B.Sc., B.B.A.</td><td>$ <span class="correct">1.17</span> thousand</td><td>$ <span class="correct">0.98</span> thousand</td><td><span class="correct">No</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(b) Repeat part (a) using the Bonferroni adjustment. (Use technology to calculate any critical values. Round your answers for the LSD values to two decimal places.)</strong></p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Treatment</th>
+                <th>LSD (in $1,000s)</th>
+                <th>Absolute Difference (in $1,000s)</th>
+                <th>Population Means Differ?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>B.A., B.Sc.</td><td>$ <span class="correct">1.58</span> thousand</td><td>$ <span class="correct">0.88</span> thousand</td><td><span class="correct">No</span></td></tr>
+              <tr><td>B.A., B.B.A.</td><td>$ <span class="correct">1.58</span> thousand</td><td>$ <span class="correct">1.86</span> thousand</td><td><span class="correct">Yes</span></td></tr>
+              <tr><td>B.Sc., B.B.A.</td><td>$ <span class="correct">1.58</span> thousand</td><td>$ <span class="correct">0.98</span> thousand</td><td><span class="correct">No</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 14-093 Algo (Randomized Block (Two-Way) Analysis of Variance)</h3>
+
+        <p>
+          The following statistics were generated from a randomized block experiment with <em>k</em> = 3 and <em>b</em> = 7:
+        </p>
+
+        <ul class="options">
+          <li>SST = 110</li>
+          <li>SSB = 46</li>
+          <li>SSE = 25</li>
+        </ul>
+
+        <div class="sub-question">
+          <p><strong>(a) Test to determine whether the treatment means differ. (Use α = 0.05.)</strong></p>
+
+          <p><strong>State the null and alternative hypotheses.</strong></p>
+          <ol class="options">
+            <li>H<sub>0</sub>: μ[T<sub>1</sub>] ≠ μ[T<sub>2</sub>] ≠ … ≠ μ[T<sub>7</sub>] ; H<sub>1</sub>: At least two treatment means are the same.</li>
+            <li>H<sub>0</sub>: μ[T<sub>1</sub>] = μ[T<sub>2</sub>] = … = μ[T<sub>3</sub>] ; H<sub>1</sub>: At least two treatment means differ.</li>
+            <li>H<sub>0</sub>: μ[T<sub>1</sub>] = μ[T<sub>2</sub>] = … = μ[T<sub>7</sub>] ; H<sub>1</sub>: At least two treatment means differ.</li>
+            <li>H<sub>0</sub>: μ[T<sub>1</sub>] ≠ μ[T<sub>2</sub>] ≠ μ[T<sub>3</sub>] ; H<sub>1</sub>: At least two treatment means are the same.</li>
+          </ol>
+
+          <p class="answer-line">Correct Answer: <span class="correct">ii</span></p>
+          <p class="answer-line">Test statistic: <span class="correct">26.4</span></p>
+          <p class="answer-line">p-value: <span class="correct">0.0000</span></p>
+          <p class="answer-line">There <span class="correct">is</span> enough evidence to conclude that the treatment means differ.</p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(b) Test to determine whether the block means differ. (Use α = 0.05.)</strong></p>
+
+          <p><strong>State the null and alternative hypotheses.</strong></p>
+          <ol class="options">
+            <li>H<sub>0</sub>: μ[B<sub>1</sub>] = μ[B<sub>2</sub>] = … = μ[B<sub>7</sub>] ; H<sub>1</sub>: At least two block means differ.</li>
+            <li>H<sub>0</sub>: μ[B<sub>1</sub>] = μ[B<sub>2</sub>] = μ[B<sub>3</sub>] ; H<sub>1</sub>: At least two block means differ.</li>
+            <li>H<sub>0</sub>: μ[B<sub>1</sub>] ≠ μ[B<sub>2</sub>] ≠ μ[B<sub>3</sub>] ; H<sub>1</sub>: At least two block means are the same.</li>
+            <li>H<sub>0</sub>: μ[B<sub>1</sub>] ≠ μ[B<sub>2</sub>] ≠ … ≠ μ[B<sub>7</sub>] ; H<sub>1</sub>: At least two block means are the same.</li>
+          </ol>
+
+          <p class="answer-line">Correct Answer: <span class="correct">i</span></p>
+          <p class="answer-line">Test statistic: <span class="correct">3.68</span></p>
+          <p class="answer-line">p-value: <span class="correct">0.0261</span></p>
+          <p class="answer-line">There <span class="correct">is</span> enough evidence to conclude that the block means differ.</p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 14-097 Algo (Randomized Block (Two-Way) Analysis of Variance)</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th colspan="3">Treatment</th>
+            </tr>
+            <tr>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>8</td><td>13</td><td>9</td></tr>
+            <tr><td>11</td><td>9</td><td>8</td></tr>
+            <tr><td>13</td><td>15</td><td>12</td></tr>
+            <tr><td>8</td><td>12</td><td>7</td></tr>
+            <tr><td>11</td><td>11</td><td>12</td></tr>
+          </tbody>
+        </table>
+
+        <div class="sub-question">
+          <p><strong>(a) Assuming that the data shown here were generated from a randomized block experiment, calculate the following values. (Round your answers to two decimal places.)</strong></p>
+          <p class="answer-line">SS(Total) = <span class="correct">75.60</span></p>
+          <p class="answer-line">SST = <span class="correct">15.60</span></p>
+          <p class="answer-line">SSB = <span class="correct">37.60</span></p>
+          <p class="answer-line">SSE = <span class="correct">22.40</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(b) Assuming that the data below were generated from a one-way (independent samples) experiment, calculate the following values.</strong></p>
+          <p class="answer-line">SS(Total) = <span class="correct">75.60</span></p>
+          <p class="answer-line">SST = <span class="correct">15.60</span></p>
+          <p class="answer-line">SSE = <span class="correct">60.00</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(c) Why does SS(Total) remain the same for both experimental designs?</strong></p>
+          <ol class="options">
+            <li>For data with equal sample sizes, the randomized block experiment and one-way experiment are equivalent.</li>
+            <li>This is a coincidence; in general, this will not be the case.</li>
+            <li>The variation between treatments is the same for both designs.</li>
+            <li>The variation between all the data is the same for both designs.</li>
+            <li>The variation between blocks is the same for both designs.</li>
+          </ol>
+          <p class="answer-line">Correct Answer: <span class="correct">iv</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(d) Why does SST remain the same for both experimental designs?</strong></p>
+          <ol class="options">
+            <li>For data with equal sample sizes, the randomized block experiment and one-way experiment are equivalent.</li>
+            <li>This is a coincidence; in general, this will not be the case.</li>
+            <li>The variation between treatments is the same for both designs.</li>
+            <li>The variation between all the data is the same for both designs.</li>
+            <li>The variation between blocks is the same for both designs.</li>
+          </ol>
+          <p class="answer-line">Correct Answer: <span class="correct">iii</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(e) Why does SSB + SSE in part (a) equal SSE in part (b)?</strong></p>
+          <ol class="options">
+            <li>The one-way analysis of variance divides the sum of squares for error in the randomized block design into two parts.</li>
+            <li>The randomized block design divides the sum of squares for error in the one-way analysis of variance into two parts.</li>
+            <li>The randomized block design divides the sum of squares for treatments in the one-way analysis of variance into two parts.</li>
+            <li>This is a coincidence; in general, this will not be the case.</li>
+            <li>The one-way analysis of variance divides the sum of squares for treatments in the randomized block design into two parts.</li>
+          </ol>
+          <p class="answer-line">Correct Answer: <span class="correct">ii</span></p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 14-109 Algo (Two-Factor Analysis of Variance)</h3>
+
+        <p>
+          A statistics practitioner conducted a two-factor analysis of variance experiment with <em>a</em> = 4, <em>b</em> = 3, and <em>r</em> = 8.
+          The sums of squares are listed here:
+        </p>
+
+        <ul class="options">
+          <li>SS(Total) = 9,490</li>
+          <li>SS(A) = 263</li>
+          <li>SS(B) = 829</li>
+          <li>SS(AB) = 543</li>
+        </ul>
+
+        <div class="sub-question">
+          <p><strong>(a) Test at the 5% significance level to determine whether factors A and B interact.</strong></p>
+
+          <p><strong>State the null and alternative hypotheses.</strong></p>
+          <ol class="options">
+            <li>H<sub>0</sub>: Factors A and B do interact to affect the mean responses. H<sub>1</sub>: Factors A and B do not interact to affect the mean responses.</li>
+            <li>H<sub>0</sub>: Factors A and B show weak interaction. H<sub>1</sub>: Factors A and B show strong interaction.</li>
+            <li>H<sub>0</sub>: Factors A and B do not interact to affect the mean responses. H<sub>1</sub>: Factors A and B do interact to affect the mean responses.</li>
+            <li>H<sub>0</sub>: Factors A and B show strong interaction. H<sub>1</sub>: Factors A and B show weak interaction.</li>
+          </ol>
+
+          <p class="answer-line">Correct Answer: <span class="correct">iii</span></p>
+          <p class="answer-line">Test statistic: <span class="correct">0.97</span></p>
+          <p class="answer-line">p-value: <span class="correct">0.4521</span></p>
+          <p class="answer-line">There <span class="correct">is not</span> enough evidence to conclude that factors A and B interact.</p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(b) Test at the 5% significance level to determine whether differences exist between the levels of factor A.</strong></p>
+
+          <p><strong>State the null and alternative hypotheses.</strong></p>
+          <ol class="options">
+            <li>H<sub>0</sub>: The means of the levels of factor A are all different. H<sub>1</sub>: At least two means are the same.</li>
+            <li>H<sub>0</sub>: The means of the levels of factor A are equal. H<sub>1</sub>: At least two means differ.</li>
+            <li>H<sub>0</sub>: At least two means are the same. H<sub>1</sub>: The means of the levels of factor A are all different.</li>
+            <li>H<sub>0</sub>: At least two means differ. H<sub>1</sub>: The means of the levels of factor A are equal.</li>
+          </ol>
+
+          <p class="answer-line">Correct Answer: <span class="correct">ii</span></p>
+          <p class="answer-line">Test statistic: <span class="correct">0.94</span></p>
+          <p class="answer-line">p-value: <span class="correct">0.4263</span></p>
+          <p class="answer-line">There <span class="correct">is not</span> enough evidence to conclude that differences exist between the levels of factor A.</p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(c) Test at the 5% significance level to determine whether differences exist between the levels of factor B.</strong></p>
+
+          <p><strong>State the null and alternative hypotheses.</strong></p>
+          <ol class="options">
+            <li>H<sub>0</sub>: The means of the levels of factor B are all different. H<sub>1</sub>: At least two means are the same.</li>
+            <li>H<sub>0</sub>: The means of the levels of factor B are equal. H<sub>1</sub>: At least two means differ.</li>
+            <li>H<sub>0</sub>: At least two means are the same. H<sub>1</sub>: The means of the levels of factor B are all different.</li>
+            <li>H<sub>0</sub>: At least two means differ. H<sub>1</sub>: The means of the levels of factor B are equal.</li>
+          </ol>
+
+          <p class="answer-line">Correct Answer: <span class="correct">ii</span></p>
+          <p class="answer-line">Test statistic: <span class="correct">4.43</span></p>
+          <p class="answer-line">p-value: <span class="correct">0.0148</span></p>
+          <p class="answer-line">There <span class="correct">is</span> enough evidence to conclude that differences exist between the levels of factor B.</p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 14-110 Algo (Two-Factor Analysis of Variance)</h3>
+
+        <p>The data listed next were generated from a 2 × 2 factorial experiment with 3 replicates.</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th rowspan="2">Factor A</th>
+              <th colspan="2">Factor B</th>
+            </tr>
+            <tr>
+              <th>1</th>
+              <th>2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td rowspan="3">1</td><td>6</td><td>11</td></tr>
+            <tr><td>9</td><td>10</td></tr>
+            <tr><td>8</td><td>11</td></tr>
+            <tr><td rowspan="3">2</td><td>8</td><td>15</td></tr>
+            <tr><td>10</td><td>13</td></tr>
+            <tr><td>6</td><td>10</td></tr>
+          </tbody>
+        </table>
+
+        <p><strong>Compute the p-value for the following tests. (Use α = 0.05.)</strong></p>
+
+        <div class="sub-question">
+          <p><strong>(a) Test to determine whether factors A and B interact.</strong></p>
+          <p class="answer-line">Correct Answer: <span class="correct">i</span></p>
+          <p class="answer-line">Test statistic: <span class="correct">0.64</span></p>
+          <p class="answer-line">p-value: <span class="correct">0.4465</span></p>
+          <p class="answer-line">There <span class="correct">is not</span> enough evidence to conclude that factors A and B interact.</p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(b) Test to determine whether differences exist between the levels of factor A.</strong></p>
+          <p class="answer-line">Correct Answer: <span class="correct">ii</span></p>
+          <p class="answer-line">Test statistic: <span class="correct">1.26</span></p>
+          <p class="answer-line">p-value: <span class="correct">0.2948</span></p>
+          <p class="answer-line">There <span class="correct">is not</span> enough evidence to conclude that differences exist between the levels of factor A.</p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(c) Test to determine whether differences exist between the levels of factor B.</strong></p>
+          <p class="answer-line">Correct Answer: <span class="correct">iv</span></p>
+          <p class="answer-line">Test statistic: <span class="correct">13.56</span></p>
+          <p class="answer-line">p-value: <span class="correct">0.0062</span></p>
+          <p class="answer-line">There <span class="correct">is</span> enough evidence to conclude that differences exist between the levels of factor B.</p>
+        </div>
+      </div>
+    </section>
+
+    <nav class="chapter-nav">
+      <a class="nav-btn" href="chapter14menu.html">Back to Chapter 14 Menu</a>
+      <a class="nav-btn" href="../chapter15/chapter15menu.html">Next Chapter</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>MIS510 Coursework Website</p>
+    </div>
+  </footer>
+</body>
+</html>

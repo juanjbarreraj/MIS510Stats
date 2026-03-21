@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 17 Assignments</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Chapter 17</h1>
+      <p class="subtitle">Assignments</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Chapter 17 Assignments</h1>
+      <p>Assignment exercises and answers</p>
+    </section>
+
+    <section class="section-card">
+      <h2 class="section-title">Section A: Chapter 17 Assignment</h2>
+
+      <div class="question-block">
+        <h3>Exercise 17-001 (Estimating the Coefficients and Assessing the Model)</h3>
+
+        <p>
+          Use a 5% significance level for all tests.
+        </p>
+
+        <p>
+          A developer who specializes in summer cottage properties is considering purchasing a large tract of land adjoining a lake.
+          The current owner of the tract has already subdivided the land into separate building lots and has prepared the lots by
+          removing some of the trees. The developer wants to forecast the value of each lot. From previous experience, it is known
+          that the most important factors affecting the price in thousands of dollars of a lot are size in thousands of square feet
+          (<em>x</em><sub>1</sub>), number of mature trees (<em>x</em><sub>2</sub>), and distance to the lake in feet
+          (<em>x</em><sub>3</sub>). From a nearby area, the relevant data for 60 recently sold lots were gathered.
+        </p>
+
+        <div class="sub-question">
+          <p><strong>(a) Find the regression equation. (Round your answers to four decimal places.)</strong></p>
+          <p class="answer-line">
+            ŷ = <span class="correct">51.3912</span>
+            + <span class="correct">0.6999</span><em>x</em><sub>1</sub>
+            + <span class="correct">0.6788</span><em>x</em><sub>2</sub>
+            + <span class="correct">0.3783</span><em>x</em><sub>3</sub>
+          </p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(b) What is the standard error of estimate? (Round your answer to two decimal places.)</strong></p>
+          <p class="answer-line"><span class="correct">40.24</span></p>
+          <p class="answer-line">
+            It is an estimate of the standard deviation of the <span class="correct">error variable</span>.
+          </p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(c) What is the coefficient of determination? (Round your answer to four decimal places.)</strong></p>
+          <p class="answer-line"><span class="correct">0.2425</span></p>
+          <p class="answer-line">
+            <span class="correct">24.25%</span> of the variation in <span class="correct">price</span> is explained by the model.
+          </p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(d) What is the coefficient of determination, adjusted for degrees of freedom? (Round your answer to four decimal places.)</strong></p>
+          <p class="answer-line"><span class="correct">0.2019</span></p>
+          <p class="answer-line">
+            It differs from R<sup>2</sup> because it includes an adjustment for the
+            <span class="correct">number of independent variables</span>.
+          </p>
+          <p class="answer-line">
+            The adjusted R<sup>2</sup> value suggests the model is a <span class="correct">poor</span> fit.
+          </p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(e) Test the validity of the model.</strong></p>
+          <p><strong>State the hypotheses.</strong></p>
+          <ol class="options">
+            <li>H<sub>0</sub>: At least one β<sub>i</sub> is not equal to zero. H<sub>1</sub>: β<sub>1</sub> = β<sub>2</sub> = β<sub>3</sub> = 0</li>
+            <li>H<sub>0</sub>: β<sub>1</sub> = β<sub>2</sub> = β<sub>3</sub> = 0. H<sub>1</sub>: At least one β<sub>i</sub> is not equal to zero</li>
+            <li>H<sub>0</sub>: β<sub>1</sub> ≠ β<sub>2</sub> ≠ β<sub>3</sub> ≠ 0. H<sub>1</sub>: At least one β<sub>i</sub> is equal to zero</li>
+            <li>H<sub>0</sub>: At least one β<sub>i</sub> is equal to zero. H<sub>1</sub>: β<sub>1</sub> ≠ β<sub>2</sub> ≠ β<sub>3</sub> ≠ 0</li>
+          </ol>
+          <p class="answer-line">Correct Answer: <span class="correct">ii</span></p>
+
+          <p class="answer-line">
+            Test statistic: <span class="correct">5.97</span>
+          </p>
+          <p class="answer-line">
+            p-value: <span class="correct">0.0013</span>
+          </p>
+          <p class="answer-line">
+            There <span class="correct">is</span> enough evidence to conclude that the model is valid.
+          </p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(f) Interpret the coefficients.</strong></p>
+          <p class="answer-line">
+            For each additional thousand square feet, the price on average
+            <span class="correct">increases</span> by <span class="correct">0.6999</span> thousand dollars,
+            provided the other variables remain constant.
+          </p>
+          <p class="answer-line">
+            For each additional mature tree, the price on average
+            <span class="correct">increases</span> by <span class="correct">0.6788</span> thousand dollars,
+            provided the other variables remain constant.
+          </p>
+          <p class="answer-line">
+            For each additional foot from the lake, the price on average
+            <span class="correct">decreases</span> by <span class="correct">0.3784</span> thousand dollars,
+            provided the other variables remain constant.
+          </p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(g) Test to determine whether each of the independent variables is linearly related to the price of the lot in this model.</strong></p>
+          <p class="answer-line">
+            H<sub>0</sub>: <span class="correct">β<sub>i</sub> = 0</span>
+          </p>
+          <p class="answer-line">
+            H<sub>1</sub>: <span class="correct">β<sub>i</sub> ≠ 0</span>
+          </p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Independent Variable</th>
+                <th>Test Statistic</th>
+                <th>p-value</th>
+                <th>Linearly Related?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lot Size</td>
+                <td><span class="correct">1.25</span></td>
+                <td><span class="correct">0.2156</span></td>
+                <td><span class="correct">No</span></td>
+              </tr>
+              <tr>
+                <td>Trees</td>
+                <td><span class="correct">2.96</span></td>
+                <td><span class="correct">0.0045</span></td>
+                <td><span class="correct">Yes</span></td>
+              </tr>
+              <tr>
+                <td>Distance</td>
+                <td><span class="correct">-1.94</span></td>
+                <td><span class="correct">0.0577</span></td>
+                <td><span class="correct">No</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 17-003 Algo (Estimating the Coefficients and Assessing the Model)</h3>
+
+        <p>
+          Use a 5% significance level for all tests.
+        </p>
+
+        <p>
+          The president of a company that manufactures drywall wants to analyze the variables that affect demand for his product.
+          Drywall is used to construct walls in houses and offices. Consequently, the president decides to develop a regression model
+          in which the dependent variable is monthly sales of drywall (in hundreds of 4 × 8 sheets) and the independent variables are as follows:
+        </p>
+
+        <ul>
+          <li>Number of building permits issued in the county (<em>x</em><sub>1</sub>)</li>
+          <li>Five-year mortgage rates (in percentage points) (<em>x</em><sub>2</sub>)</li>
+          <li>Vacancy rate in apartments (in percentage points) (<em>x</em><sub>3</sub>)</li>
+          <li>Vacancy rate in office buildings (in percentage points) (<em>x</em><sub>4</sub>)</li>
+        </ul>
+
+        <p>
+          To estimate a multiple regression model, monthly observations from the past 2 years were recorded.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Drywall</th>
+              <th>Permits</th>
+              <th>Mortgage</th>
+              <th>A Vacancy</th>
+              <th>O Vacancy</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>326</td><td>49</td><td>8.35</td><td>2.98</td><td>13.43</td></tr>
+            <tr><td>378</td><td>79</td><td>8.08</td><td>5.60</td><td>14.51</td></tr>
+            <tr><td>371</td><td>79</td><td>7.90</td><td>2.25</td><td>14.24</td></tr>
+            <tr><td>142</td><td>50</td><td>7.69</td><td>4.26</td><td>14.30</td></tr>
+            <tr><td>192</td><td>37</td><td>7.00</td><td>2.60</td><td>11.64</td></tr>
+            <tr><td>222</td><td>53</td><td>7.32</td><td>2.97</td><td>10.61</td></tr>
+            <tr><td>128</td><td>22</td><td>8.40</td><td>5.35</td><td>18.45</td></tr>
+            <tr><td>303</td><td>69</td><td>8.28</td><td>3.13</td><td>18.52</td></tr>
+            <tr><td>56</td><td>21</td><td>8.00</td><td>5.60</td><td>10.29</td></tr>
+            <tr><td>254</td><td>46</td><td>8.95</td><td>4.81</td><td>11.91</td></tr>
+            <tr><td>379</td><td>79</td><td>8.21</td><td>5.88</td><td>17.75</td></tr>
+            <tr><td>175</td><td>30</td><td>7.24</td><td>2.98</td><td>18.16</td></tr>
+            <tr><td>154</td><td>38</td><td>7.35</td><td>5.69</td><td>17.14</td></tr>
+            <tr><td>353</td><td>73</td><td>7.27</td><td>4.86</td><td>16.11</td></tr>
+            <tr><td>235</td><td>55</td><td>7.08</td><td>5.68</td><td>18.54</td></tr>
+            <tr><td>37</td><td>12</td><td>7.76</td><td>4.46</td><td>19.46</td></tr>
+            <tr><td>288</td><td>62</td><td>8.21</td><td>2.23</td><td>19.26</td></tr>
+            <tr><td>6</td><td>12</td><td>7.76</td><td>5.00</td><td>17.28</td></tr>
+            <tr><td>333</td><td>60</td><td>7.20</td><td>2.42</td><td>15.15</td></tr>
+            <tr><td>278</td><td>49</td><td>7.57</td><td>3.25</td><td>19.94</td></tr>
+            <tr><td>99</td><td>14</td><td>8.44</td><td>3.61</td><td>15.47</td></tr>
+            <tr><td>295</td><td>66</td><td>8.43</td><td>2.13</td><td>12.75</td></tr>
+            <tr><td>307</td><td>62</td><td>8.14</td><td>4.35</td><td>12.24</td></tr>
+            <tr><td>231</td><td>40</td><td>8.81</td><td>2.31</td><td>18.65</td></tr>
+          </tbody>
+        </table>
+
+        <div class="sub-question">
+          <p><strong>(a) What is the standard error of estimate? (Round your answer to two decimal places.)</strong></p>
+          <p class="answer-line"><span class="correct">39.93</span></p>
+          <p class="answer-line">
+            This statistic can be used to assess the model’s fit because the standard error is
+            <span class="correct">small relative to the values of the dependent variable</span>.
+          </p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(b) What is the coefficient of determination? (Round your answer to four decimal places.)</strong></p>
+          <p class="answer-line"><span class="correct">0.8933</span></p>
+          <p class="answer-line">
+            <span class="correct">89.33%</span> of the variation in <span class="correct">drywall sales</span> is explained by the model.
+          </p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(c) Test the validity of the model.</strong></p>
+          <p><strong>State the hypotheses.</strong></p>
+          <ol class="options">
+            <li>H<sub>0</sub>: β<sub>1</sub> + β<sub>2</sub> + β<sub>3</sub> + β<sub>4</sub> ≠ 0; H<sub>1</sub>: At least one β<sub>i</sub> is equal to zero</li>
+            <li>H<sub>0</sub>: At least one β<sub>i</sub> is equal to zero; H<sub>1</sub>: β<sub>1</sub> = β<sub>2</sub> = β<sub>3</sub> = β<sub>4</sub> = 0</li>
+            <li>H<sub>0</sub>: β<sub>1</sub> = β<sub>2</sub> = β<sub>3</sub> = β<sub>4</sub> = 0; H<sub>1</sub>: At least one β<sub>i</sub> is not equal to zero</li>
+            <li>H<sub>0</sub>: At least one β<sub>i</sub> is not equal to zero; H<sub>1</sub>: β<sub>1</sub> = β<sub>2</sub> = β<sub>3</sub> = β<sub>4</sub> = 0</li>
+          </ol>
+          <p class="answer-line">Correct Answer: <span class="correct">iii</span></p>
+
+          <p class="answer-line">
+            Test statistic: <span class="correct">39.78</span>
+          </p>
+          <p class="answer-line">
+            p-value: <span class="correct">0.0000</span>
+          </p>
+          <p class="answer-line">
+            There <span class="correct">is</span> enough evidence to conclude that the model is valid.
+          </p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(d) Interpret the coefficients.</strong></p>
+          <p class="answer-line">
+            For each additional building permit, monthly sales on average
+            <span class="correct">increase</span> by <span class="correct">4.75</span> hundred sheets,
+            provided the other variables remain constant.
+          </p>
+          <p class="answer-line">
+            For each one percentage point increase in mortgage rates, monthly sales on average
+            <span class="correct">increase</span> by <span class="correct">16.39</span> hundred sheets.
+          </p>
+          <p class="answer-line">
+            For each one percentage point increase in apartment vacancy rate, monthly sales on average
+            <span class="correct">decrease</span> by <span class="correct">9.72</span> hundred sheets.
+          </p>
+          <p class="answer-line">
+            For each one percentage point increase in office vacancy rate, monthly sales on average
+            <span class="correct">increase</span> by <span class="correct">1.32</span> hundred sheets.
+          </p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(e) Test to determine whether each independent variable is linearly related to drywall demand in this model.</strong></p>
+          <p class="answer-line">
+            H<sub>0</sub>: <span class="correct">β<sub>i</sub> = 0</span>
+          </p>
+          <p class="answer-line">
+            H<sub>1</sub>: <span class="correct">β<sub>i</sub> ≠ 0</span>
+          </p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Independent Variable</th>
+                <th>Test Statistic</th>
+                <th>p-value</th>
+                <th>Linearly Related?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Permits</td>
+                <td><span class="correct">12.08</span></td>
+                <td><span class="correct">0.0000</span></td>
+                <td><span class="correct">Yes</span></td>
+              </tr>
+              <tr>
+                <td>Mortgage Rates</td>
+                <td><span class="correct">1.09</span></td>
+                <td><span class="correct">0.2908</span></td>
+                <td><span class="correct">No</span></td>
+              </tr>
+              <tr>
+                <td>Apartment Vacancy</td>
+                <td><span class="correct">-1.53</span></td>
+                <td><span class="correct">0.1425</span></td>
+                <td><span class="correct">No</span></td>
+              </tr>
+              <tr>
+                <td>Office Vacancy</td>
+                <td><span class="correct">0.48</span></td>
+                <td><span class="correct">0.6396</span></td>
+                <td><span class="correct">No</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 17-007 Algo (Estimating the Coefficients and Assessing the Model)</h3>
+
+        <p>
+          Use a 5% significance level for all tests.
+        </p>
+
+        <p>
+          The marketing manager for a chain of hardware stores needed more information about the effectiveness of the three types of
+          advertising that the chain used. These are localized direct mailing, newspaper advertising, and local television advertisements.
+          To determine which type is most effective, the manager collected 1 week’s data from 25 randomly selected stores.
+          For each store, the following variables were recorded.
+        </p>
+
+        <ul>
+          <li>Weekly gross sales</li>
+          <li>Weekly expenditures on direct mailing (<em>x</em><sub>1</sub>)</li>
+          <li>Weekly expenditures on newspaper advertising (<em>x</em><sub>2</sub>)</li>
+          <li>Weekly expenditures on television commercials (<em>x</em><sub>3</sub>)</li>
+        </ul>
+
+        <p>All variables were recorded in thousands of dollars.</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Sales</th>
+              <th>Direct</th>
+              <th>Newspaper</th>
+              <th>Television</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>15.88</td><td>1.05</td><td>1.35</td><td>1.55</td></tr>
+            <tr><td>21.49</td><td>1.29</td><td>2.25</td><td>1.97</td></tr>
+            <tr><td>25.37</td><td>0.96</td><td>1.79</td><td>1.64</td></tr>
+            <tr><td>16.12</td><td>1.51</td><td>1.73</td><td>1.73</td></tr>
+            <tr><td>16.68</td><td>1.30</td><td>1.71</td><td>1.61</td></tr>
+            <tr><td>20.00</td><td>1.06</td><td>1.61</td><td>1.82</td></tr>
+            <tr><td>17.59</td><td>0.86</td><td>1.62</td><td>1.97</td></tr>
+            <tr><td>22.63</td><td>0.78</td><td>2.20</td><td>1.61</td></tr>
+            <tr><td>23.88</td><td>1.20</td><td>1.77</td><td>1.13</td></tr>
+            <tr><td>18.86</td><td>0.83</td><td>1.17</td><td>1.77</td></tr>
+            <tr><td>24.54</td><td>1.01</td><td>1.76</td><td>2.04</td></tr>
+            <tr><td>19.42</td><td>1.34</td><td>1.81</td><td>1.63</td></tr>
+            <tr><td>19.87</td><td>0.55</td><td>2.25</td><td>1.93</td></tr>
+            <tr><td>18.76</td><td>1.06</td><td>1.98</td><td>1.63</td></tr>
+            <tr><td>22.89</td><td>0.90</td><td>1.54</td><td>2.27</td></tr>
+            <tr><td>20.28</td><td>1.88</td><td>1.15</td><td>1.45</td></tr>
+            <tr><td>16.61</td><td>0.51</td><td>1.19</td><td>1.93</td></tr>
+            <tr><td>18.22</td><td>0.53</td><td>1.75</td><td>1.44</td></tr>
+            <tr><td>15.94</td><td>1.21</td><td>1.01</td><td>1.46</td></tr>
+            <tr><td>18.81</td><td>0.90</td><td>1.68</td><td>1.66</td></tr>
+            <tr><td>20.19</td><td>0.97</td><td>1.72</td><td>1.59</td></tr>
+            <tr><td>19.73</td><td>1.01</td><td>1.72</td><td>1.42</td></tr>
+            <tr><td>18.32</td><td>1.29</td><td>1.47</td><td>2.05</td></tr>
+            <tr><td>21.89</td><td>1.35</td><td>1.94</td><td>2.28</td></tr>
+            <tr><td>20.47</td><td>1.07</td><td>2.31</td><td>1.77</td></tr>
+          </tbody>
+        </table>
+
+        <div class="sub-question">
+          <p><strong>(a) Find the regression equation. (Round your answers to four decimal places.)</strong></p>
+          <p class="answer-line">
+            ŷ = <span class="correct">12.2489</span>
+            + <span class="correct">0.5240</span><em>x</em><sub>1</sub>
+            + <span class="correct">3.2947</span><em>x</em><sub>2</sub>
+            + <span class="correct">0.7938</span><em>x</em><sub>3</sub>
+          </p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(b) What is the coefficient of determination? (Round your answer to four decimal places.)</strong></p>
+          <p class="answer-line"><span class="correct">0.1970</span></p>
+          <p class="answer-line"><span class="correct">0.0822</span> is the coefficient of determination adjusted for degrees of freedom.</p>
+          <p class="answer-line">
+            These statistics tell you the model fits <span class="correct">poorly</span>.
+          </p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(c) What does the standard error of estimate tell you about the regression model? (Round your answer to two decimal places.)</strong></p>
+          <p class="answer-line">
+            The standard deviation of the <span class="correct">error variable</span> is
+            <span class="correct">2.57</span>.
+          </p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(d) Test the validity of the model.</strong></p>
+          <p><strong>State the hypotheses.</strong></p>
+          <ol class="options">
+            <li>H<sub>0</sub>: At least one β<sub>i</sub> is not equal to zero. H<sub>1</sub>: β<sub>1</sub> = β<sub>2</sub> = β<sub>3</sub> = 0</li>
+            <li>H<sub>0</sub>: β<sub>1</sub> = β<sub>2</sub> = β<sub>3</sub> = 0. H<sub>1</sub>: At least one β<sub>i</sub> is equal to zero</li>
+            <li>H<sub>0</sub>: β<sub>1</sub> = β<sub>2</sub> = β<sub>3</sub> = 0. H<sub>1</sub>: At least one β<sub>i</sub> is not equal to zero</li>
+            <li>H<sub>0</sub>: At least one β<sub>i</sub> is equal to zero. H<sub>1</sub>: β<sub>1</sub> ≠ β<sub>2</sub> ≠ β<sub>3</sub> ≠ 0</li>
+          </ol>
+          <p class="answer-line">Correct Answer: <span class="correct">iii</span></p>
+          <p class="answer-line">Test statistic: <span class="correct">1.72</span></p>
+          <p class="answer-line">p-value: <span class="correct">0.1942</span></p>
+          <p class="answer-line">
+            There <span class="correct">is not</span> enough evidence to conclude that the model is valid.
+          </p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(e) Which independent variables are linearly related to weekly gross sales in this model?</strong></p>
+          <p class="answer-line">
+            H<sub>0</sub>: <span class="correct">β<sub>i</sub> = 0</span>
+          </p>
+          <p class="answer-line">
+            H<sub>1</sub>: <span class="correct">β<sub>i</sub> ≠ 0</span>
+          </p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Independent Variable</th>
+                <th>Test Statistic</th>
+                <th>p-value</th>
+                <th>Linearly Related?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Direct</td>
+                <td><span class="correct">0.31</span></td>
+                <td><span class="correct">0.7618</span></td>
+                <td><span class="correct">No</span></td>
+              </tr>
+              <tr>
+                <td>Newspaper</td>
+                <td><span class="correct">2.16</span></td>
+                <td><span class="correct">0.0426</span></td>
+                <td><span class="correct">Yes</span></td>
+              </tr>
+              <tr>
+                <td>Television</td>
+                <td><span class="correct">0.41</span></td>
+                <td><span class="correct">0.6869</span></td>
+                <td><span class="correct">No</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 17-032 Algo (Regression Diagnostics - II)</h3>
+
+        <p>
+          The following exercise uses the same advertising data set from Exercise 17-007.
+        </p>
+
+        <div class="sub-question">
+          <p><strong>(a) Conduct an analysis of the residuals to determine whether any of the required conditions are violated.</strong></p>
+          <p class="answer-line">
+            The error variable <span class="correct">appears</span> to
+            <span class="correct">be approximately normal</span>.
+            The variance of the error variable
+            <span class="correct">becomes larger when the predicted values are near the center of their range</span>.
+            Thus, the <span class="correct">homoscedasticity</span> condition is
+            <span class="correct">violated</span>.
+          </p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(b) Based on the coefficients of correlation between the independent variables, does multicollinearity appear to be a problem?</strong></p>
+          <ol class="options">
+            <li>None of the coefficients of correlation are large, so multicollinearity may be a problem.</li>
+            <li>None of the coefficients of correlation are large, so multicollinearity does not appear to be a problem.</li>
+            <li>One or more of the coefficients of correlation are large, so multicollinearity does not appear to be a problem.</li>
+            <li>One or more of the coefficients of correlation are large, so multicollinearity might appear to be a problem.</li>
+          </ol>
+          <p class="answer-line">Correct Answer: <span class="correct">ii</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(c) Identify any observations that should be checked for accuracy. (Consider observations with standardized residuals below -2 and above 2 to be potential outliers.)</strong></p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Sales</th>
+                <th>Direct</th>
+                <th>Newspaper</th>
+                <th>Television</th>
+                <th>Check for Accuracy?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>15.78</td><td>1.05</td><td>1.35</td><td>1.55</td><td><span class="correct">No</span></td></tr>
+              <tr><td>21.59</td><td>1.29</td><td>2.25</td><td>1.97</td><td><span class="correct">No</span></td></tr>
+              <tr><td>25.27</td><td>0.96</td><td>1.79</td><td>1.64</td><td><span class="correct">Yes</span></td></tr>
+              <tr><td>16.02</td><td>1.51</td><td>1.73</td><td>1.73</td><td><span class="correct">No</span></td></tr>
+              <tr><td>16.38</td><td>1.30</td><td>1.71</td><td>1.61</td><td><span class="correct">No</span></td></tr>
+              <tr><td>19.90</td><td>1.06</td><td>1.61</td><td>1.82</td><td><span class="correct">No</span></td></tr>
+              <tr><td>17.49</td><td>0.86</td><td>1.62</td><td>1.97</td><td><span class="correct">No</span></td></tr>
+              <tr><td>22.33</td><td>0.78</td><td>2.20</td><td>1.61</td><td><span class="correct">No</span></td></tr>
+              <tr><td>23.98</td><td>1.20</td><td>1.77</td><td>1.13</td><td><span class="correct">No</span></td></tr>
+              <tr><td>18.76</td><td>0.83</td><td>1.17</td><td>1.77</td><td><span class="correct">No</span></td></tr>
+              <tr><td>24.44</td><td>1.01</td><td>1.76</td><td>2.04</td><td><span class="correct">No</span></td></tr>
+              <tr><td>19.52</td><td>1.34</td><td>1.81</td><td>1.63</td><td><span class="correct">No</span></td></tr>
+              <tr><td>19.77</td><td>0.55</td><td>2.25</td><td>1.93</td><td><span class="correct">No</span></td></tr>
+              <tr><td>18.86</td><td>1.06</td><td>1.98</td><td>1.63</td><td><span class="correct">No</span></td></tr>
+              <tr><td>22.59</td><td>0.90</td><td>1.54</td><td>2.27</td><td><span class="correct">No</span></td></tr>
+              <tr><td>20.18</td><td>1.88</td><td>1.15</td><td>1.45</td><td><span class="correct">No</span></td></tr>
+              <tr><td>16.51</td><td>0.51</td><td>1.19</td><td>1.93</td><td><span class="correct">No</span></td></tr>
+              <tr><td>18.12</td><td>0.53</td><td>1.75</td><td>1.44</td><td><span class="correct">No</span></td></tr>
+              <tr><td>16.04</td><td>1.21</td><td>1.01</td><td>1.46</td><td><span class="correct">No</span></td></tr>
+              <tr><td>18.71</td><td>0.90</td><td>1.68</td><td>1.66</td><td><span class="correct">No</span></td></tr>
+              <tr><td>19.89</td><td>0.97</td><td>1.72</td><td>1.59</td><td><span class="correct">No</span></td></tr>
+              <tr><td>19.83</td><td>1.01</td><td>1.72</td><td>1.42</td><td><span class="correct">No</span></td></tr>
+              <tr><td>18.22</td><td>1.29</td><td>1.47</td><td>2.05</td><td><span class="correct">No</span></td></tr>
+              <tr><td>21.99</td><td>1.35</td><td>1.94</td><td>2.28</td><td><span class="correct">No</span></td></tr>
+              <tr><td>20.37</td><td>1.07</td><td>2.31</td><td>1.77</td><td><span class="correct">No</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 17-055 Algo (Regression Diagnostics - III: Time Series)</h3>
+
+        <p>
+          You may need to use the appropriate appendix table to answer this question.
+        </p>
+
+        <p>
+          The president of a company that manufactures drywall wants to analyze the variables that affect demand for his product.
+          Drywall is used to construct walls in houses and offices. Consequently, the president decides to develop a regression model
+          in which the dependent variable is monthly sales of drywall (in hundreds of 4 × 8 sheets) and the independent variables are as follows:
+        </p>
+
+        <ul>
+          <li>Number of building permits issued in the county</li>
+          <li>Five-year mortgage rates (in percentage points)</li>
+          <li>Vacancy rate in apartments (in percentage points)</li>
+          <li>Vacancy rate in office buildings (in percentage points)</li>
+        </ul>
+
+        <p>
+          To estimate a multiple regression model, monthly observations from the past 2 years were recorded.
+          The data is presented below in chronological order.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Drywall</th>
+              <th>Permits</th>
+              <th>Mortgage</th>
+              <th>A Vacancy</th>
+              <th>O Vacancy</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>331</td><td>49</td><td>8.35</td><td>2.98</td><td>13.43</td></tr>
+            <tr><td>379</td><td>79</td><td>8.08</td><td>5.60</td><td>14.51</td></tr>
+            <tr><td>370</td><td>79</td><td>7.90</td><td>2.25</td><td>14.24</td></tr>
+            <tr><td>141</td><td>50</td><td>7.69</td><td>4.26</td><td>14.30</td></tr>
+            <tr><td>197</td><td>37</td><td>7.00</td><td>2.60</td><td>11.64</td></tr>
+            <tr><td>217</td><td>53</td><td>7.32</td><td>2.97</td><td>10.61</td></tr>
+            <tr><td>129</td><td>22</td><td>8.40</td><td>5.35</td><td>18.45</td></tr>
+            <tr><td>304</td><td>69</td><td>8.28</td><td>3.13</td><td>18.52</td></tr>
+            <tr><td>57</td><td>21</td><td>8.00</td><td>5.60</td><td>10.29</td></tr>
+            <tr><td>249</td><td>46</td><td>8.95</td><td>4.81</td><td>11.91</td></tr>
+            <tr><td>378</td><td>79</td><td>8.21</td><td>5.88</td><td>17.75</td></tr>
+            <tr><td>176</td><td>30</td><td>7.24</td><td>2.98</td><td>18.16</td></tr>
+            <tr><td>149</td><td>38</td><td>7.35</td><td>5.69</td><td>17.14</td></tr>
+            <tr><td>348</td><td>73</td><td>7.27</td><td>4.86</td><td>16.11</td></tr>
+            <tr><td>236</td><td>55</td><td>7.08</td><td>5.68</td><td>18.54</td></tr>
+            <tr><td>32</td><td>12</td><td>7.76</td><td>4.46</td><td>19.46</td></tr>
+            <tr><td>287</td><td>62</td><td>8.21</td><td>2.23</td><td>19.26</td></tr>
+            <tr><td>8</td><td>12</td><td>7.76</td><td>5.00</td><td>17.28</td></tr>
+            <tr><td>332</td><td>60</td><td>7.20</td><td>2.42</td><td>15.15</td></tr>
+            <tr><td>277</td><td>49</td><td>7.57</td><td>3.25</td><td>19.94</td></tr>
+            <tr><td>98</td><td>14</td><td>8.44</td><td>3.61</td><td>15.47</td></tr>
+            <tr><td>300</td><td>66</td><td>8.43</td><td>2.13</td><td>12.75</td></tr>
+            <tr><td>306</td><td>62</td><td>8.14</td><td>4.35</td><td>12.24</td></tr>
+            <tr><td>230</td><td>40</td><td>8.81</td><td>2.31</td><td>18.65</td></tr>
+          </tbody>
+        </table>
+
+        <div class="sub-question">
+          <p><strong>Is there evidence of positive first-order autocorrelation? (Use a significance level of 5%.)</strong></p>
+
+          <p><strong>State the null and alternative hypotheses.</strong></p>
+          <ol class="options">
+            <li>H<sub>0</sub>: There is negative first-order autocorrelation. H<sub>1</sub>: There is positive first-order autocorrelation.</li>
+            <li>H<sub>0</sub>: There is positive first-order autocorrelation. H<sub>1</sub>: There is no first-order autocorrelation.</li>
+            <li>H<sub>0</sub>: There is no positive first-order autocorrelation. H<sub>1</sub>: There is negative first-order autocorrelation.</li>
+            <li>H<sub>0</sub>: There is no first-order autocorrelation. H<sub>1</sub>: There is positive first-order autocorrelation.</li>
+          </ol>
+          <p class="answer-line">Correct Answer: <span class="correct">iv</span></p>
+
+          <p class="answer-line">Test statistic: <span class="correct">1.75</span></p>
+          <p class="answer-line">
+            Rejection region: test statistic &lt; <span class="correct">1.01</span>
+          </p>
+          <p class="answer-line">
+            Conclusion: <span class="correct">The test was inconclusive.</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 17-056 Algo (Regression Diagnostics - III: Time Series)</h3>
+
+        <p>
+          You may need to use the appropriate appendix table to answer this question.
+        </p>
+
+        <p>
+          The manager of Colonial Furniture has been reviewing weekly advertising expenditures. During the past 6 months, all advertisements
+          for the store have appeared in the local newspaper. The number of ads per week has varied from one to seven. The store’s sales staff
+          has been tracking the number of customers who enter the store each week. The number of ads and the number of customers per week for
+          the past 26 weeks were recorded. The data is presented below in chronological order.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Ads</th>
+              <th>Customers</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>5</td><td>348</td></tr>
+            <tr><td>6</td><td>314</td></tr>
+            <tr><td>3</td><td>445</td></tr>
+            <tr><td>2</td><td>337</td></tr>
+            <tr><td>4</td><td>177</td></tr>
+            <tr><td>2</td><td>326</td></tr>
+            <tr><td>4</td><td>339</td></tr>
+            <tr><td>2</td><td>478</td></tr>
+            <tr><td>4</td><td>334</td></tr>
+            <tr><td>2</td><td>537</td></tr>
+            <tr><td>7</td><td>491</td></tr>
+            <tr><td>5</td><td>398</td></tr>
+            <tr><td>4</td><td>381</td></tr>
+            <tr><td>7</td><td>377</td></tr>
+            <tr><td>2</td><td>517</td></tr>
+            <tr><td>5</td><td>259</td></tr>
+            <tr><td>5</td><td>464</td></tr>
+            <tr><td>2</td><td>148</td></tr>
+            <tr><td>1</td><td>431</td></tr>
+            <tr><td>6</td><td>571</td></tr>
+            <tr><td>6</td><td>591</td></tr>
+            <tr><td>5</td><td>390</td></tr>
+            <tr><td>6</td><td>671</td></tr>
+            <tr><td>3</td><td>189</td></tr>
+            <tr><td>2</td><td>130</td></tr>
+            <tr><td>7</td><td>372</td></tr>
+          </tbody>
+        </table>
+
+        <div class="sub-question">
+          <p><strong>Determine whether there is evidence of first-order autocorrelation. (Use a significance level of 5%.)</strong></p>
+
+          <p><strong>State the null and alternative hypotheses.</strong></p>
+          <ol class="options">
+            <li>H<sub>0</sub>: There is first-order autocorrelation. H<sub>1</sub>: There is no first-order autocorrelation.</li>
+            <li>H<sub>0</sub>: There is no first-order autocorrelation. H<sub>1</sub>: There is first-order autocorrelation.</li>
+            <li>H<sub>0</sub>: There is first-order autocorrelation. H<sub>1</sub>: There is negative first-order autocorrelation.</li>
+            <li>H<sub>0</sub>: There is positive first-order autocorrelation. H<sub>1</sub>: There is negative first-order autocorrelation.</li>
+          </ol>
+          <p class="answer-line">Correct Answer: <span class="correct">ii</span></p>
+
+          <p class="answer-line">Test statistic: <span class="correct">2.21</span></p>
+          <p class="answer-line">
+            Rejection region: test statistic &gt; <span class="correct">2.70</span>
+          </p>
+          <p class="answer-line">
+            Rejection region: test statistic &lt; <span class="correct">1.30</span>
+          </p>
+          <p class="answer-line">
+            Conclusion: <span class="correct">There is not enough evidence to infer the presence of first-order autocorrelation.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <nav class="chapter-nav">
+      <a class="nav-btn" href="chapter17menu.html">Back to Chapter 17 Menu</a>
+      <a class="nav-btn" href="../index.html">Back to Home</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>MIS510 Coursework Website</p>
+    </div>
+  </footer>
+</body>
+</html>

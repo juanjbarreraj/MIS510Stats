@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 6 Assignments</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Chapter 6</h1>
+      <p class="subtitle">Assignments</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Chapter 6 Assignments</h1>
+      <p>Assignment exercises and answers</p>
+    </section>
+
+    <section class="section-card">
+      <h2 class="section-title">Section A: Chapter 6 Assignment</h2>
+
+      <div class="question-block">
+        <h3>Exercise 06-039 (Joint, Marginal, and Conditional Probability)</h3>
+
+        <p>
+          An analysis of fired or laid-off workers, their age, and the reasons for their departure produced
+          the following table of joint probabilities.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th rowspan="2">Reason for Job Loss</th>
+              <th colspan="4">Age Category</th>
+            </tr>
+            <tr>
+              <th>20–24</th>
+              <th>25–54</th>
+              <th>55–64</th>
+              <th>65 and Older</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Plant or company closed or moved</td>
+              <td>0.015</td>
+              <td>0.320</td>
+              <td>0.089</td>
+              <td>0.029</td>
+            </tr>
+            <tr>
+              <td>Insufficient work</td>
+              <td>0.014</td>
+              <td>0.180</td>
+              <td>0.034</td>
+              <td>0.011</td>
+            </tr>
+            <tr>
+              <td>Position or shift abolished</td>
+              <td>0.006</td>
+              <td>0.214</td>
+              <td>0.071</td>
+              <td>0.016</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="sub-question">
+          <p><strong>(a)</strong> What is the probability that a 25- to 54-year-old employee was laid off or fired because of insufficient work?</p>
+          <p class="answer-line"><span class="correct">0.252</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(b)</strong> What proportion of laid-off or fired workers is age 65 and older?</p>
+          <p class="answer-line"><span class="correct">0.056</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(c)</strong> What is the probability that a laid-off or fired worker because the plant or company closed is 65 or older?</p>
+          <p class="answer-line"><span class="correct">0.064</span></p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 06-047 Algo (Joint, Marginal, and Conditional Probability)</h3>
+
+        <p>
+          Credit scorecards are used by financial institutions to help decide to whom loans should be granted.
+          An analysis of the records of one bank produced the following probabilities.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th rowspan="2">Loan Performance</th>
+              <th colspan="2">Score</th>
+            </tr>
+            <tr>
+              <th>Under 400</th>
+              <th>400 or More</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Fully Repaid</td>
+              <td>0.17</td>
+              <td>0.62</td>
+            </tr>
+            <tr>
+              <td>Defaulted</td>
+              <td>0.11</td>
+              <td>0.10</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="sub-question">
+          <p><strong>(a)</strong> What proportion of loans are fully repaid?</p>
+          <p class="answer-line"><span class="correct">0.79</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(b)</strong> What proportion of loans given to scorers of less than 400 fully repay?</p>
+          <p class="answer-line"><span class="correct">0.607</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(c)</strong> What proportion of loans given to scorers of 400 or more fully repay?</p>
+          <p class="answer-line"><span class="correct">0.8611</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(d)</strong> Are score and whether the loan is fully repaid independent? Explain.</p>
+          <p class="answer-line">
+            <span class="correct">No</span> because
+            <span class="correct">P(Fully Repaid)</span>
+            <span class="correct">≠</span>
+            <span class="correct">P(Fully Repaid | Under 400)</span>.
+          </p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 06-049 (Joint, Marginal, and Conditional Probability)</h3>
+
+        <p>
+          To gauge the relationship between education and unemployment, an economist turned to the U.S. Census
+          from which the following table of joint probabilities was produced.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Education</th>
+              <th>Employed</th>
+              <th>Unemployed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Not a high school graduate</td>
+              <td>0.075</td>
+              <td>0.015</td>
+            </tr>
+            <tr>
+              <td>High school graduate</td>
+              <td>0.257</td>
+              <td>0.035</td>
+            </tr>
+            <tr>
+              <td>Some college, no degree</td>
+              <td>0.155</td>
+              <td>0.016</td>
+            </tr>
+            <tr>
+              <td>Associate’s degree</td>
+              <td>0.096</td>
+              <td>0.008</td>
+            </tr>
+            <tr>
+              <td>Bachelor’s degree</td>
+              <td>0.211</td>
+              <td>0.012</td>
+            </tr>
+            <tr>
+              <td>Advanced degree</td>
+              <td>0.118</td>
+              <td>0.004</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="sub-question">
+          <p><strong>(a)</strong> What is the probability that a high school graduate is unemployed?</p>
+          <p class="answer-line"><span class="correct">0.120</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(b)</strong> Determine the probability that a randomly selected individual is employed.</p>
+          <p class="answer-line"><span class="correct">0.912</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(c)</strong> Find the probability that an unemployed person possesses an advanced degree.</p>
+          <p class="answer-line"><span class="correct">0.044</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(d)</strong> What is the probability that a randomly selected person did not finish high school?</p>
+          <p class="answer-line"><span class="correct">0.090</span></p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 06-059 Algo (Joint, Marginal, and Conditional Probability)</h3>
+
+        <p>
+          Following are the joint probabilities for a news channel. Round your answers to three decimal places.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Consistent Liberal</th>
+              <th>Mostly Liberal</th>
+              <th>Mixed</th>
+              <th>Mostly Conservative</th>
+              <th>Consistent Conservative</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Trust</td>
+              <td>0.007</td>
+              <td>0.060</td>
+              <td>0.171</td>
+              <td>0.121</td>
+              <td>0.081</td>
+            </tr>
+            <tr>
+              <td>Distrust</td>
+              <td>0.128</td>
+              <td>0.121</td>
+              <td>0.102</td>
+              <td>0.017</td>
+              <td>0.001</td>
+            </tr>
+            <tr>
+              <td>Neither trust nor distrust</td>
+              <td>0.012</td>
+              <td>0.024</td>
+              <td>0.055</td>
+              <td>0.018</td>
+              <td>0.007</td>
+            </tr>
+            <tr>
+              <td>Don’t know</td>
+              <td>0.006</td>
+              <td>0.011</td>
+              <td>0.035</td>
+              <td>0.011</td>
+              <td>0.012</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="sub-question">
+          <p><strong>(a)</strong> Determine the probability that a consistent liberal would distrust this news channel.</p>
+          <p class="answer-line"><span class="correct">0.8366</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(b)</strong> Find the probability that a mostly conservative trusts this news channel.</p>
+          <p class="answer-line"><span class="correct">0.7246</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(c)</strong> Find the probability that a consistent conservative neither trusts nor distrusts this news channel.</p>
+          <p class="answer-line"><span class="correct">0.0693</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(d)</strong> If one person is chosen at random, find the probability that that person is a consistent conservative.</p>
+          <p class="answer-line"><span class="correct">0.101</span></p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 06-073 Algo (Probability Rules and Trees)</h3>
+
+        <p>
+          A study undertaken by a county’s supervisor of elections revealed that 47% of registered voters are Democrats,
+          47% are Republicans, and 6% are others. If two registered voters are selected at random, what is the probability
+          that both of them have the same party affiliation?
+        </p>
+
+        <p class="answer-line"><span class="correct">0.4454</span></p>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 06-087 Algo (Probability Rules and Trees)</h3>
+
+        <p>
+          How many Americans under the age of 40 have student debts? A survey attempted to answer the question by asking
+          whether respondents had student debt and in what was their occupation. The following percentages were determined.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Occupation</th>
+              <th>Respondents in Occupation (%)</th>
+              <th>Has Student Debt (%)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Managerial/Professional</td>
+              <td>31</td>
+              <td>47</td>
+            </tr>
+            <tr>
+              <td>Technical, Sales, or Services</td>
+              <td>13</td>
+              <td>38</td>
+            </tr>
+            <tr>
+              <td>Other</td>
+              <td>56</td>
+              <td>28</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="sub-question">
+          <p>Calculate the probability that a randomly selected respondent has student debt.</p>
+          <p class="answer-line"><span class="correct">0.3519</span></p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 06-129 Algo (Bayes’s Law)</h3>
+
+        <p>
+          The Pap smear is the standard test for cervical cancer. The false-positive rate is 0.639; the false-negative
+          rate is 0.170. Family history and age are factors that must be considered when assigning a probability of cervical
+          cancer. Suppose that, after obtaining a medical history, a physician determines that 4% of women of this patient’s
+          age and with similar family histories have cervical cancer. Round your answers to four decimal places.
+        </p>
+
+        <div class="sub-question">
+          <p>Determine the effect a positive Pap smear test have on the probability that the patient has cervical cancer.</p>
+          <p class="answer-line"><span class="correct">0.0513</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p>Determine the effect a negative Pap smear test have on the probability that the patient has cervical cancer.</p>
+          <p class="answer-line"><span class="correct">0.0192</span></p>
+        </div>
+      </div>
+    </section>
+
+    <nav class="chapter-nav">
+      <a class="nav-btn" href="chapter6menu.html">Back to Chapter 6 Menu</a>
+      <a class="nav-btn" href="../chapter7/chapter7menu.html">Next Chapter</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>MIS510 Coursework Website</p>
+    </div>
+  </footer>
+</body>
+</html>

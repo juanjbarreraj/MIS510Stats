@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 7 Assignments</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Chapter 7</h1>
+      <p class="subtitle">Assignments</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Chapter 7 Assignments</h1>
+      <p>Assignment exercises and answers</p>
+    </section>
+
+    <section class="section-card">
+      <h2 class="section-title">Section A: Chapter 7 Assignment</h2>
+
+      <div class="question-block">
+        <h3>Exercise 07-034 Algo (Random Variables and Probability Distributions)</h3>
+
+        <p>
+          You have been given the choice of receiving $200 in cash or receiving a gold coin that has a face value
+          of $100. However, the actual value of the gold coin depends on its gold content. You are told that the
+          coin has a 30% probability of being worth $300, a 30% probability of being worth $700, and a 40%
+          probability of being worth its face value. Using your decision on expected value, should you choose the coin?
+        </p>
+
+        <p class="answer-line">
+          The expected value of the coin is <span class="correct">$340</span>.
+          Since the expected value of the coin is <span class="correct">greater than</span> $200,
+          the coin <span class="correct">should</span> be chosen.
+        </p>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 07-035 Algo (Random Variables and Probability Distributions)</h3>
+
+        <p>
+          The manager of a bookstore recorded the number of customers who arrive at a checkout counter every
+          5 minutes from which the following distribution was calculated.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>X</th>
+              <th>P(x)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>0</td><td>0.20</td></tr>
+            <tr><td>1</td><td>0.05</td></tr>
+            <tr><td>2</td><td>0.15</td></tr>
+            <tr><td>3</td><td>0.40</td></tr>
+            <tr><td>4</td><td>0.20</td></tr>
+          </tbody>
+        </table>
+
+        <div class="sub-question">
+          <p>Calculate the mean and standard deviation of the random variable.</p>
+          <p class="answer-line">Mean: <span class="correct">2.35</span> customers</p>
+          <p class="answer-line">Standard deviation: <span class="correct">1.39</span> customers</p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 07-046 Algo (Bivariate Distributions)</h3>
+
+        <p>The following table lists the bivariate distribution of <em>X</em> and <em>Y</em>.</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th rowspan="2">y</th>
+              <th colspan="2">x</th>
+            </tr>
+            <tr>
+              <th>1</th>
+              <th>2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>0.30</td>
+              <td>0.15</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>0.15</td>
+              <td>0.40</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          It has been found that <em>E(X)</em> = 1.55, <em>E(Y)</em> = 1.55,
+          <em>V(X)</em> = 0.2475, and <em>V(Y)</em> = 0.2475.
+        </p>
+
+        <div class="sub-question">
+          <p>Compute the covariance and the coefficient of correlation.</p>
+          <p class="answer-line">Covariance: <span class="correct">0.098</span></p>
+          <p class="answer-line">Coefficient of correlation: <span class="correct">0.394</span></p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 07-056 Algo (Bivariate Distributions)</h3>
+
+        <p>
+          After analyzing several months of sales data, the owner of an appliance store produced the following
+          joint probability distribution of the number of refrigerators and stoves sold daily.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th rowspan="2">Stoves</th>
+              <th colspan="3">Refrigerators</th>
+            </tr>
+            <tr>
+              <th>0</th>
+              <th>1</th>
+              <th>2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>0</td>
+              <td>0.06</td>
+              <td>0.08</td>
+              <td>0.07</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>0.11</td>
+              <td>0.21</td>
+              <td>0.17</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>0.07</td>
+              <td>0.15</td>
+              <td>0.08</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="sub-question">
+          <p><strong>(a)</strong> Find the marginal probability distribution of the number of refrigerators, x, sold daily.</p>
+          <table>
+            <thead>
+              <tr>
+                <th>x</th>
+                <th>P(x)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>0</td><td><span class="correct">0.24</span></td></tr>
+              <tr><td>1</td><td><span class="correct">0.44</span></td></tr>
+              <tr><td>2</td><td><span class="correct">0.32</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(b)</strong> Find the marginal probability distribution of the number of stoves, y, sold daily.</p>
+          <table>
+            <thead>
+              <tr>
+                <th>y</th>
+                <th>P(y)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>0</td><td><span class="correct">0.21</span></td></tr>
+              <tr><td>1</td><td><span class="correct">0.49</span></td></tr>
+              <tr><td>2</td><td><span class="correct">0.30</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(c)</strong> Compute the mean and variance of the number of refrigerators sold daily.</p>
+          <p class="answer-line">Mean: <span class="correct">1.08</span></p>
+          <p class="answer-line">Variance: <span class="correct">0.5536</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(d)</strong> Compute the mean and variance of the number of stoves sold daily.</p>
+          <p class="answer-line">Mean: <span class="correct">1.09</span></p>
+          <p class="answer-line">Variance: <span class="correct">0.5019</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(e)</strong> Compute the covariance and the coefficient of correlation.</p>
+          <p class="answer-line">Covariance: <span class="correct">-0.0072</span></p>
+          <p class="answer-line">Coefficient of correlation: <span class="correct">-0.014</span></p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 07-124 Algo (Binomial Distribution)</h3>
+
+        <p>
+          According to a poll, 51% of American adults think that protecting the environment should be given
+          priority over developing U.S. energy supplies, 33% percent think that developing energy supplies is
+          more important, and 6% believe the two are equally important. The rest had no opinion. Suppose that
+          a sample of 100 American adults is quizzed on the subject.
+        </p>
+
+        <div class="sub-question">
+          <p><strong>(a)</strong> What is the probability fifty or more think that protecting the environment should be given priority?</p>
+          <p class="answer-line"><span class="correct">0.6181</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(b)</strong> What is the probability thirty or fewer think that developing energy supplies is more important?</p>
+          <p class="answer-line"><span class="correct">0.3006</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(c)</strong> What is the probability three or fewer have no opinion?</p>
+          <p class="answer-line"><span class="correct">0.0078</span></p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 07-139 Algo (Binomial Distribution)</h3>
+
+        <p>
+          A neighborhood group has complained that at an intersection near a school, half of all cars roll through
+          the stop sign without coming to a complete halt. A statistics practitioner plans to observe a random sample
+          of 200 cars. If the neighborhood group is correct, what is the probability that between 45% and 55% of the
+          cars roll through the stop sign?
+        </p>
+
+        <p class="answer-line"><span class="correct">0.8414</span></p>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 07-155 Algo (Poisson Distribution)</h3>
+
+        <p>
+          After conducting a survey of golfers a statistician concludes that the number of lost balls in a round
+          is Poisson distributed with a mean of 4. Find the probability of the following events.
+        </p>
+
+        <div class="sub-question">
+          <p><strong>(a)</strong> a golfer loses no golf balls</p>
+          <p class="answer-line"><span class="correct">0.0183</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(b)</strong> a golfer loses 10 or more golf balls</p>
+          <p class="answer-line"><span class="correct">0.0081</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(c)</strong> a golfer loses 4 or fewer golf balls</p>
+          <p class="answer-line"><span class="correct">0.6288</span></p>
+        </div>
+      </div>
+    </section>
+
+    <nav class="chapter-nav">
+      <a class="nav-btn" href="chapter7menu.html">Back to Chapter 7 Menu</a>
+      <a class="nav-btn" href="../chapter8/chapter8menu.html">Next Chapter</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>MIS510 Coursework Website</p>
+    </div>
+  </footer>
+</body>
+</html>

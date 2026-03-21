@@ -1,0 +1,164 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 17 Excel Activity</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Chapter 17</h1>
+      <p class="subtitle">Excel Activity</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Chapter 17 Excel Activity</h1>
+      <p>Excel-based assignment exercises and answers</p>
+    </section>
+
+    <section class="section-card">
+      <h2 class="section-title">Section B: Chapter 17 Excel Activity</h2>
+
+      <div class="question-block">
+        <h3>Excel Activity: An Analysis of Mutual Fund Managers, Part 1</h3>
+
+        <p>
+          There are thousands of mutual funds available. There is no shortage of sources of information about them.
+          Newspapers regularly report the value of each unit, mutual fund companies and brokers advertise extensively,
+          and there are books on the subject. Many of the advertisements imply that individuals should invest in the
+          advertiser's mutual fund because it has performed well in the past. Unfortunately, there is little evidence
+          to infer that past performance is a predictor of the future. However, it may be possible to acquire useful
+          information by examining the managers of mutual funds. Several researchers have studied the issue. One project
+          gathered data concerning the performance of 2,029 funds.
+        </p>
+
+        <p>
+          The performance of each fund was measured by its risk-adjusted excess return, which is the difference between
+          the return on investment of the fund and a return that is considered a standard. The standard is based on a
+          variety of variables, including the risk-free rate.
+        </p>
+
+        <p>
+          Four variables describe the fund manager: age, tenure (how many years the manager has been in charge),
+          whether the manager had an MBA (1 = yes, 0 = no), and a measure of the quality of the manager's education
+          [the average Scholastic Achievement Test (SAT) score of students at the university where the manager received
+          his or her undergraduate degree].
+        </p>
+
+        <p>
+          The data has been collected in the Microsoft Excel file below. Download the spreadsheet and perform the required
+          analysis to answer the questions below. Do not round intermediate calculations. Use a minus sign to enter a
+          negative value, if any. If your answer is zero, enter "0".
+        </p>
+
+        <p class="answer-line">
+          Spreadsheet file:
+          <a href="assets/spreadsheets/C17-01-a52cd8.xlsx" download>Download spreadsheet C17-01-a52cd8.xlsx</a>
+        </p>
+
+        <div class="sub-question">
+          <p><strong>Conduct an analysis of the data using multiple regression. Round your answers to three decimal places.</strong></p>
+          <p class="answer-line">
+            Return = <span class="correct">-1.236</span>
+            + <span class="correct">0.005</span> × SAT
+            + <span class="correct">-0.023</span> × MBA
+            + <span class="correct">-0.115</span> × Age
+            + <span class="correct">-0.002</span> × Tenure
+          </p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>Test the overall validity of the model. Use the 5% significance level. Round your answer to four decimal places.</strong></p>
+          <p class="answer-line">
+            Because the p-value of the F-test is <span class="correct">0.0001</span>, which is
+            <span class="correct">lower</span> than the significance level, there
+            <span class="correct">is</span> enough evidence to infer that the model is valid.
+          </p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>Discuss how the average SAT score of the manager's alma mater, whether he or she has an MBA, and his or her age and tenure are related to the performance of the fund. Round your answers to three decimal places. Enter your answers as positive values.</strong></p>
+
+          <p class="answer-line">
+            For each additional one-point increase in the SAT score, returns
+            <span class="correct">increase</span> on average by
+            <span class="correct">0.005</span> p.p., provided the other variables remain constant.
+          </p>
+
+          <p class="answer-line">
+            The returns of mutual funds managed by MBAs are on average
+            <span class="correct">0.023</span> p.p.
+            <span class="correct">smaller</span> than the returns of mutual funds managed by people without an MBA,
+            provided the other variables remain constant.
+          </p>
+
+          <p class="answer-line">
+            For each additional one-year increase in age of the manager, returns
+            <span class="correct">decrease</span> on average by
+            <span class="correct">0.115</span> p.p., provided the other variables remain constant.
+          </p>
+
+          <p class="answer-line">
+            For each additional one-year increase in the manager's job tenure, returns
+            <span class="correct">decrease</span> on average by
+            <span class="correct">0.002</span> p.p., provided the other variables remain constant.
+          </p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>Test to determine whether each of the independent variables is linearly related to the dependent variable in this model. Use the 5% significance level. Round your answers to four decimal places.</strong></p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Variable</th>
+                <th>p-value</th>
+                <th>Linearly related?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>SAT</td>
+                <td><span class="correct">0.0001</span></td>
+                <td><span class="correct">Yes</span></td>
+              </tr>
+              <tr>
+                <td>MBA</td>
+                <td><span class="correct">0.9511</span></td>
+                <td><span class="correct">No</span></td>
+              </tr>
+              <tr>
+                <td>Age</td>
+                <td><span class="correct">0.0026</span></td>
+                <td><span class="correct">Yes</span></td>
+              </tr>
+              <tr>
+                <td>Tenure</td>
+                <td><span class="correct">0.9861</span></td>
+                <td><span class="correct">No</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <nav class="chapter-nav">
+      <a class="nav-btn" href="chapter17menu.html">Back to Chapter 17 Menu</a>
+      <a class="nav-btn" href="../index.html">Back to Home</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>MIS510 Coursework Website</p>
+    </div>
+  </footer>
+</body>
+</html>
+```

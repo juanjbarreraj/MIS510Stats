@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 7 Excel Activity</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Chapter 7</h1>
+      <p class="subtitle">Excel Activity</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Chapter 7 Excel Activity</h1>
+      <p>Excel-based assignment exercises and answers</p>
+    </section>
+
+    <section class="section-card">
+      <h2 class="section-title">Section B: Chapter 7 Excel Activity</h2>
+
+      <div class="question-block">
+        <h3>Excel Activity: To Bunt or Not to Bunt, That Is the Question — Part 2</h3>
+
+        <p>
+          No sport generates as many statistics as baseball. Reporters, managers, and fans argue and discuss strategies on the basis of these statistics.
+          An article in <em>Chance</em> ("A Statistician Reads the Sports Page," Hal S. Stern, Vol. 1, Winter 1997) offers baseball lovers another opportunity
+          to analyze numbers associated with the game.
+        </p>
+
+        <p>
+          The table below lists the expected number of runs in situations that are defined by the number of outs and the bases occupied.
+          (Runs are based on results from a season. The results for the National League are also shown in the article and are similar.)
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th rowspan="2">Bases Occupied</th>
+              <th colspan="3">Expected Number of Runs Scored</th>
+            </tr>
+            <tr>
+              <th>0 outs</th>
+              <th>1 out</th>
+              <th>2 outs</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Bases empty</td><td>0.50</td><td>0.26</td><td>0.07</td></tr>
+            <tr><td>First base</td><td>0.83</td><td>0.50</td><td>0.20</td></tr>
+            <tr><td>Second base</td><td>1.05</td><td>0.70</td><td>0.34</td></tr>
+            <tr><td>Third base</td><td>1.22</td><td>0.84</td><td>0.38</td></tr>
+            <tr><td>First base and second base</td><td>1.43</td><td>0.98</td><td>0.48</td></tr>
+            <tr><td>First base and third base</td><td>1.66</td><td>1.09</td><td>0.50</td></tr>
+            <tr><td>Second base and third base</td><td>1.95</td><td>1.52</td><td>0.63</td></tr>
+            <tr><td>Bases loaded</td><td>2.30</td><td>1.60</td><td>0.83</td></tr>
+          </tbody>
+        </table>
+
+        <p>
+          The table allows us to determine the best strategy in a variety of circumstances. This case will concentrate on the strategy of the sacrifice bunt.
+          The purpose of the sacrifice bunt is to sacrifice the batter to move base runners to the next base. It can be employed when there are fewer than two outs
+          and men on base. Ignoring the suicide squeeze, any of four outcomes can occur:
+        </p>
+
+        <ol class="options">
+          <li>The bunt is successful. The runner (or runners) advances one base, and the batter is out.</li>
+          <li>The batter is out but fails to advance the runner.</li>
+          <li>The batter bunts into a double play.</li>
+          <li>The batter is safe (hit or error), and the runner advances.</li>
+        </ol>
+
+        <p>
+          Suppose that you are an American League manager. The game is tied in the middle innings of a game, and there is a runner on first base with no one out.
+          The probabilities of the four outcomes of a bunt for the batter at the plate are given below.
+        </p>
+
+        <p class="answer-line">P(Outcome 1) = <span class="correct">0.74</span></p>
+        <p class="answer-line">P(Outcome 2) = <span class="correct">0.10</span></p>
+        <p class="answer-line">P(Outcome 3) = <span class="correct">0.10</span></p>
+        <p class="answer-line">P(Outcome 4) = <span class="correct">0.06</span></p>
+
+        <p>
+          Assume for simplicity that after the hit or error in outcome 4, there will be men on first and second base and no one out.
+        </p>
+
+        <p>
+          The data has been collected in the Microsoft Excel file below. Download the spreadsheet and perform the required analysis to answer the question below.
+        </p>
+
+        <p class="answer-line">
+          Spreadsheet file:
+          <a href="assets/spreadsheets/C07-01-520f36.xlsx" download>Download spreadsheet C07-01-520f36.xlsx</a>
+        </p>
+
+        <div class="sub-question">
+          <p><strong>Assuming that you wish to score as many runs as possible, should you signal the batter to sacrifice bunt? Do not round intermediate calculations. Round your answers to four decimal places.</strong></p>
+
+          <p class="answer-line">
+            <span class="correct">No</span>, because the expected number of runs scored with a runner on first base with no outs is
+            <span class="correct">0.8300</span>, which is <span class="correct">greater</span> than the expected number of runs scored after bunting,
+            which is <span class="correct">0.6608</span>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <nav class="chapter-nav">
+      <a class="nav-btn" href="chapter7menu.html">Back to Chapter 7 Menu</a>
+      <a class="nav-btn" href="../chapter8/chapter8menu.html">Next Chapter</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>MIS510 Coursework Website</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 4 Assignments</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Chapter 4</h1>
+      <p class="subtitle">Assignments</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Chapter 4 Assignments</h1>
+      <p>Assignment exercises and answers</p>
+    </section>
+
+    <section class="section-card">
+      <h2 class="section-title">Section A: Chapter 4 Assignment</h2>
+
+      <div class="question-block">
+        <h3>Exercise 04-011 Algo (Measures of Central Location)</h3>
+
+        <p>
+          Suppose that you bought a stock 6 years ago at $12. The stock's price at the end of each year is shown below.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>6</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Price</td>
+              <td>10</td>
+              <td>14</td>
+              <td>15</td>
+              <td>21</td>
+              <td>31</td>
+              <td>25</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="sub-question">
+          <p><strong>(a) Compute the rate of return for each year. (Round your answers to four decimal places.)</strong></p>
+          <ul class="options">
+            <li>Year 1: <span class="correct">-0.1667</span></li>
+            <li>Year 2: <span class="correct">0.4000</span></li>
+            <li>Year 3: <span class="correct">0.0714</span></li>
+            <li>Year 4: <span class="correct">0.4000</span></li>
+            <li>Year 5: <span class="correct">0.4762</span></li>
+            <li>Year 6: <span class="correct">-0.1935</span></li>
+          </ul>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(b) Compute the mean and median of the rates of return. (Round your answers to three decimal places.)</strong></p>
+          <ul class="options">
+            <li>Mean: <span class="correct">0.165</span></li>
+            <li>Median: <span class="correct">0.236</span></li>
+          </ul>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(c) Compute the geometric mean of the rates of return. (Round your answer to three decimal places.)</strong></p>
+          <p class="answer-line">Geometric Mean: <span class="correct">0.130</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(d) Explain why the best statistic to use to describe what happened to the price of the stock over the 6-year period is the geometric mean.</strong></p>
+          <p class="answer-line">
+            The <span class="correct">geometric</span> mean is used to find the average growth rate in a variable over multiple periods.
+            The <span class="correct">arithmetic</span> mean of growth rates is appropriate if you wish to estimate the mean growth
+            rate for any single period in the future. Since we wish to describe what happened to the price of the stock over a
+            6-year period, the <span class="correct">geometric</span> mean should be used.
+          </p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 04-042 (Measures of Variability)</h3>
+
+        <p>
+          A consumer advocacy group took a random sample of 100 pharmacies around the country and recorded the
+          price (in dollars per 100 pills) of Prozac. Compute the range, variance, and standard deviation of the prices.
+        </p>
+
+        <div class="sub-question">
+          <ul class="options">
+            <li>Range: <span class="correct">$25.85</span></li>
+            <li>Variance: <span class="correct">29.46</span> dollars<sup>2</sup></li>
+            <li>Standard Deviation: <span class="correct">$5.43</span></li>
+          </ul>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>Use Chebyshev's Theorem to discuss what these statistics tell you.</strong></p>
+          <p class="answer-line">
+            At least 75% of the prices lie within <span class="correct">$10.86</span> of the mean, and at least 88.9% of the prices
+            lie within <span class="correct">$16.29</span> of the mean.
+          </p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 04-046 (Measures of Variability)</h3>
+
+        <p>
+          To learn more about the size of withdrawals at a banking machine, the proprietor took a sample of
+          75 withdrawals and recorded the amounts. Determine the mean and standard deviation of these data.
+        </p>
+
+        <div class="sub-question">
+          <ul class="options">
+            <li>Mean: <span class="correct">$175.73</span></li>
+            <li>Standard Deviation: <span class="correct">$62.06</span></li>
+          </ul>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>Use Chebyshev's Theorem to describe what these two statistics tell you about the withdrawal amounts.</strong></p>
+          <p class="answer-line">
+            At least 75% of withdrawals lie within <span class="correct">$124.12</span> of the mean, and at least 88.9% of withdrawals
+            lie within <span class="correct">$186.18</span> of the mean.
+          </p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 04-065 Algo (Measures of Relative Standing)</h3>
+
+        <p>Consider the following data.</p>
+
+        <table>
+          <tbody>
+            <tr>
+              <td>8</td>
+              <td>19</td>
+              <td>14</td>
+              <td>16</td>
+              <td>30</td>
+              <td>16</td>
+              <td>2</td>
+              <td>26</td>
+              <td>31</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>11</td>
+              <td>19</td>
+              <td>3</td>
+              <td>8</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="sub-question">
+          <p><strong>Determine the interquartile range.</strong></p>
+          <p class="answer-line">Interquartile Range: <span class="correct">15</span></p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 04-068 Algo (Measures of Relative Standing)</h3>
+
+        <p>
+          A random sample of 400 speeds on a highway where the limit is 60 mph was recorded.
+          Find the "correct" speed limit if it should be set at the 90th percentile.
+        </p>
+
+        <div class="sub-question">
+          <p class="answer-line">Speed Limit: <span class="correct">76</span> mph</p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 04-084 Algo (Measures of Linear Relationship)</h3>
+
+        <p>
+          A retailer collected data from the past 8 months. The total selling expenses ($1,000) and
+          the total sales ($1,000) were recorded as listed below.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Total Sales</th>
+              <th>Selling Expenses</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>19</td><td>13</td></tr>
+            <tr><td>41</td><td>15</td></tr>
+            <tr><td>61</td><td>17</td></tr>
+            <tr><td>51</td><td>16</td></tr>
+            <tr><td>51</td><td>17</td></tr>
+            <tr><td>56</td><td>17</td></tr>
+            <tr><td>60</td><td>17</td></tr>
+            <tr><td>69</td><td>19</td></tr>
+          </tbody>
+        </table>
+
+        <div class="sub-question">
+          <p><strong>(a) Compute the covariance, the coefficient of correlation, and the coefficient of determination and describe what these statistics tell you.</strong></p>
+          <p class="answer-line">
+            The covariance is <span class="correct">26.2857</span>. Since this is <span class="correct">positive</span>, when total sales increase,
+            selling expenses generally <span class="correct">increase</span>.
+          </p>
+          <p class="answer-line">
+            The coefficient of correlation is <span class="correct">0.967</span> and indicates a
+            <span class="correct">strong positive linear</span> relationship.
+          </p>
+          <p class="answer-line">
+            The coefficient of determination, as a percent, is <span class="correct">93.6%</span>.
+            This means that this percentage of the variation in <span class="correct">selling expenses</span>
+            is explained by the amount of <span class="correct">total sales</span>.
+          </p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(b) Determine the least squares line. (Round your answer to three decimal places.)</strong></p>
+          <p class="answer-line">
+            <span class="correct">ŷ = 10.701 + 0.111x</span>
+          </p>
+          <p class="answer-line">
+            The slope of the least squares line estimates the <span class="correct">variable</span> cost, while the intercept estimates the
+            <span class="correct">fixed</span> cost.
+          </p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 04-131 Algo (Comparing Graphical and Numerical Techniques)</h3>
+
+        <p>
+          A real estate agent wanted to know to what extent the selling price of a home is related to its size.
+          The price in thousands of dollars and the size in square feet were recorded for a sample of 12 recently-sold houses.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Size (ft<sup>2</sup>)</th>
+              <th>Price ($1,000)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>2362</td><td>313</td></tr>
+            <tr><td>1801</td><td>231</td></tr>
+            <tr><td>2654</td><td>354</td></tr>
+            <tr><td>2029</td><td>260</td></tr>
+            <tr><td>2251</td><td>232</td></tr>
+            <tr><td>1476</td><td>211</td></tr>
+            <tr><td>3368</td><td>311</td></tr>
+            <tr><td>2826</td><td>307</td></tr>
+            <tr><td>2290</td><td>292</td></tr>
+            <tr><td>2054</td><td>199</td></tr>
+            <tr><td>2725</td><td>270</td></tr>
+            <tr><td>1853</td><td>198</td></tr>
+          </tbody>
+        </table>
+
+        <div class="sub-question">
+          <p><strong>Scatter diagram</strong></p>
+
+          <div class="image-container">
+            <img src="assets/images/image1.png" alt="Scatter diagram relating house size and selling price">
+          </div>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(a) Determine the least squares line. (Use units of square feet and thousands of dollars. Round your answers to three decimal places.)</strong></p>
+          <p class="answer-line"><span class="correct">ŷ = 96.491 + 0.073x</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(b) Interpret the coefficients. (Round your answer to the nearest dollar.)</strong></p>
+          <p class="answer-line">
+            For each additional square foot, the price increases on average by <span class="correct">$73</span>.
+          </p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(c) Is this information more useful than the information extracted from the scatter diagram?</strong></p>
+          <ol class="options">
+            <li>The least squares line is more useful because both coefficients are greater than zero.</li>
+            <li>The least squares line is more useful because it allows you to more precisely measure the relationship between the two variables.</li>
+            <li>The scatter diagram is more useful because it shows all of the data points.</li>
+            <li>The scatter diagram is more useful because the data are positively correlated.</li>
+          </ol>
+          <p class="answer-line">Correct Answer: <span class="correct">ii</span></p>
+        </div>
+      </div>
+    </section>
+
+    <nav class="chapter-nav">
+      <a class="nav-btn" href="chapter4menu.html">Back to Chapter 4 Menu</a>
+      <a class="nav-btn" href="../chapter5/chapter5menu.html">Next Chapter</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>MIS510 Coursework Website</p>
+    </div>
+  </footer>
+</body>
+</html>

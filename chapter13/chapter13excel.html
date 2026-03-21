@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chapter 13 Excel Activity</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Chapter 13</h1>
+      <p class="subtitle">Excel Activity</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Chapter 13 Excel Activity</h1>
+      <div class="question-block">
+        <h3>Excel Activity: Testing Eli Lilly's Latest Drug Evacetrapib</h3>
+      
+        <p>
+          The National Center for Health Statistics provided the following list of the top 10 killers in the United States and the numbers it killed in 2014.
+        </p>
+      
+        <ul class="options">
+          <li>Heart disease: 614,348</li>
+          <li>Cancer: 591,699</li>
+          <li>Chronic lower respiratory diseases: 147,101</li>
+          <li>Accidents (unintentional injuries): 136,053</li>
+          <li>Stroke (cerebrovascular diseases): 133,103</li>
+          <li>Alzheimer's disease: 93,541</li>
+          <li>Diabetes: 76,488</li>
+          <li>Influenza and pneumonia: 55,227</li>
+          <li>Nephritis, nephrotic syndrome, and nephrosis: 48,146</li>
+          <li>Intentional self-harm (suicide): 42,773</li>
+        </ul>
+      
+        <p><em>Source: Health United States, 2015, Table 19.</em></p>
+      
+        <p>
+          Not surprisingly, virtually every drug manufacturer is constantly looking for drugs to reduce any of the diseases on the list,
+          with particular emphasis on heart disease and stroke, killers 1 and 5. After spending a decade on the development of Evacetrapib,
+          a drug was designed to reduce bad cholesterol and increase good cholesterol. Here is a brief summary of the problem.
+        </p>
+      
+        <p>
+          Cholesterol can't dissolve in the blood. It must be transported through your bloodstream by carriers called lipoproteins,
+          which got their name because they're made of fat (lipid) and proteins.
+        </p>
+      
+        <p>
+          The two types of lipoproteins that carry cholesterol to and from cells are low-density lipoprotein, or LDL, and high-density
+          lipoprotein, or HDL. LDL cholesterol and HDL cholesterol, along with one-fifth of your triglyceride level, make up your total
+          cholesterol count, which can be determined through a blood test.
+        </p>
+      
+        <p>
+          LDL cholesterol is considered the "bad" cholesterol because it contributes to plaque, a thick, hard deposit that can clog
+          arteries and make them less flexible. This condition is known as atherosclerosis. If a clot forms and blocks a narrowed artery,
+          heart attack or stroke can result. Another condition called peripheral artery disease can develop when plaque buildup narrows
+          an artery supplying blood to the legs.
+        </p>
+      
+        <p>
+          HDL cholesterol is considered "good" cholesterol because it helps remove LDL cholesterol from the arteries. Experts believe
+          HDL acts as a scavenger, carrying LDL cholesterol away from the arteries and back to the liver, where it is broken down and
+          passed from the body. One-fourth to one-third of blood cholesterol is carried by HDL. A healthy level of HDL cholesterol may
+          also protect against heart attack and stroke, while low levels of HDL cholesterol have been shown to increase the risk of heart disease.
+        </p>
+      
+        <p>
+          When pharmaceutical companies develop a new drug it is tested extensively. The final stage of the testing protocol is actual patients.
+        </p>
+      
+        <p>
+          A random sample of adult volunteers was divided so that one half took the drug and the other half took a placebo, so that neither
+          the physician nor the volunteer knew which they were taking. The researchers tracked the results of the study and recorded the
+          following for the drug group and the placebo group.
+        </p>
+      
+        <ul class="options">
+          <li>LDL before the study</li>
+          <li>LDL after the study</li>
+          <li>HDL before the study</li>
+          <li>HDL after the study</li>
+          <li>Heart attack occurred (0 = no heart attack, 1 = heart attack)</li>
+          <li>Stroke (0 = no stroke, 1 = stroke)</li>
+          <li>Death (0 = alive, 1 = died)</li>
+        </ul>
+      
+        <p>
+          Help the researchers decide whether the drug Evacetrapib works. Use the 5% significance level.
+        </p>
+      
+        <p>
+          The data has been collected in the Microsoft Excel file below. Download the spreadsheet and perform the required analysis to answer
+          the questions below. Do not round intermediate calculations.
+        </p>
+      
+      </div>
+
+    <section class="section-card">
+      <h2 class="section-title">Section B: Chapter 13 Excel Activity</h2>
+
+      <div class="question-block">
+        <h3>Excel Activity: Testing Eli Lilly's Latest Drug Evacetrapib</h3>
+
+        <p>
+          Researchers tested a new drug designed to reduce bad cholesterol (LDL) and increase good cholesterol (HDL).
+          A sample of patients was divided into two groups: one receiving the drug and the other a placebo.
+        </p>
+
+        <p class="answer-line">
+          Spreadsheet file:
+          <a href="assets/spreadsheets/C13-01-b21b2d.xlsx" download>
+            Download spreadsheet C13-01-b21b2d.xlsx
+          </a>
+        </p>
+
+        <!-- (a) -->
+        <div class="sub-question">
+          <p><strong>(a) Does the drug reduce LDL?</strong></p>
+          <p class="answer-line">
+            <span class="correct">Yes</span>, because the test statistic is 
+            <span class="correct">37.33</span>, which is 
+            <span class="correct">greater</span> than the critical value of 
+            <span class="correct">1.65</span>. Therefore, we 
+            <span class="correct">reject</span> the null hypothesis.
+            Thus, there <span class="correct">is</span> enough evidence that the drug reduces LDL.
+          </p>
+        </div>
+
+        <!-- (b) -->
+        <div class="sub-question">
+          <p><strong>(b) Does the drug increase HDL?</strong></p>
+          <p class="answer-line">
+            <span class="correct">Yes</span>, because the test statistic is 
+            <span class="correct">61.73</span>, which is 
+            <span class="correct">greater</span> than the critical value of 
+            <span class="correct">1.65</span>. Therefore, we 
+            <span class="correct">reject</span> the null hypothesis.
+            Thus, there <span class="correct">is</span> enough evidence that the drug increases HDL.
+          </p>
+        </div>
+
+        <!-- (c) -->
+        <div class="sub-question">
+          <p><strong>(c) Does the drug reduce the heart attack rate?</strong></p>
+          <p class="answer-line">
+            <span class="correct">No</span>, because the p-value is 
+            <span class="correct">0.4899</span>, which is 
+            <span class="correct">greater</span> than the significance level.
+            Therefore, we <span class="correct">fail to reject</span> the null hypothesis.
+            Thus, there is <span class="correct">not</span> enough evidence that the drug reduces heart attacks.
+          </p>
+        </div>
+
+        <!-- (d) -->
+        <div class="sub-question">
+          <p><strong>(d) Does the drug reduce the rate of stroke?</strong></p>
+          <p class="answer-line">
+            <span class="correct">No</span>, because the p-value is 
+            <span class="correct">0.1050</span>, which is 
+            <span class="correct">greater</span> than the significance level.
+            Therefore, we <span class="correct">fail to reject</span> the null hypothesis.
+            Thus, there is <span class="correct">not</span> enough evidence that the drug reduces stroke.
+          </p>
+        </div>
+
+        <!-- (e) -->
+        <div class="sub-question">
+          <p><strong>(e) Does the drug reduce the death rate?</strong></p>
+          <p class="answer-line">
+            <span class="correct">No</span>, because the p-value is 
+            <span class="correct">0.3255</span>, which is 
+            <span class="correct">greater</span> than the significance level.
+            Therefore, we <span class="correct">fail to reject</span> the null hypothesis.
+            Thus, there is <span class="correct">not</span> enough evidence that the drug reduces the death rate.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <nav class="chapter-nav">
+      <a class="nav-btn" href="chapter13menu.html">Back to Chapter 13 Menu</a>
+      <a class="nav-btn" href="../chapter14/chapter14menu.html">Next Chapter</a>
+    </nav>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>MIS510 Coursework Website</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 10 Assignments</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Chapter 10</h1>
+      <p class="subtitle">Assignments</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Chapter 10 Assignments</h1>
+      <p>Assignment exercises and answers</p>
+    </section>
+
+    <section class="section-card">
+      <h2 class="section-title">Section A: Chapter 10 Assignment</h2>
+
+      <!-- ===================================== -->
+      <!-- Exercise 10-024 -->
+      <!-- ===================================== -->
+      <div class="question-block">
+        <h3>Exercise 10-024 Algo (Estimation the Population Mean When the Population Standard Deviation is Known)</h3>
+
+        <p>
+          This exercise is based on the optional subsection “Estimating the Population Mean Using the Sample Median.”
+          Assume that the population is normal.
+        </p>
+
+        <div class="sub-question">
+          <p><strong>(a)</strong> Given the following information, determine the 90% confidence interval estimate of the population mean using the sample median.</p>
+          <p>Sample median = 700, <em>σ</em> = 16, and <em>n</em> = 65.</p>
+          <ul class="options">
+            <li>LCL = <span class="correct">695.92</span></li>
+            <li>UCL = <span class="correct">704.08</span></li>
+          </ul>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(b)</strong> Using a sample mean of 700, the 90% confidence interval is 700 ± 3.26. Compare your answer in part (a) to the confidence interval computed with the sample mean. Why is the confidence interval estimate based on the sample median wider than that based on the sample mean?</p>
+          <ol class="options">
+            <li>The variance of the sample mean is larger than the variance of the sample median.</li>
+            <li>The variance of the sample median is larger than the variance of the sample mean.</li>
+            <li>The sample median is a biased estimator of the population mean resulting in a smaller variance.</li>
+            <li>The sample median is a biased estimator of the population mean resulting in a larger variance.</li>
+          </ol>
+          <p class="answer-line">Correct Answer: <span class="correct">ii</span></p>
+        </div>
+      </div>
+
+      <!-- ===================================== -->
+      <!-- Exercise 10-028 -->
+      <!-- ===================================== -->
+      <div class="question-block">
+        <h3>Exercise 10-028 Algo (Estimation the Population Mean When the Population Standard Deviation is Known)</h3>
+
+        <p>
+          Among the most exciting aspects of a university professor’s life are the departmental meetings where such critical issues
+          as the color of the walls will be painted and who gets a new desk are decided. A sample of 20 professors was asked how many
+          hours per year are devoted to these meetings.
+        </p>
+
+        <table>
+          <tbody>
+            <tr>
+              <td>13</td><td>18</td><td>3</td><td>8</td><td>19</td><td>3</td><td>6</td><td>4</td><td>23</td><td>18</td>
+            </tr>
+            <tr>
+              <td>10</td><td>6</td><td>0</td><td>5</td><td>10</td><td>16</td><td>17</td><td>15</td><td>10</td><td>4</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="sub-question">
+          <p>
+            Assuming that the variable is normally distributed with a standard deviation of 6 hours,
+            estimate the mean number of hours spent at departmental meetings by all professors.
+            Use a confidence level of 90%.
+          </p>
+          <ul class="options">
+            <li>LCL = <span class="correct">8.19</span> hours</li>
+            <li>UCL = <span class="correct">12.61</span> hours</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ===================================== -->
+      <!-- Exercise 10-038 -->
+      <!-- ===================================== -->
+      <div class="question-block">
+        <h3>Exercise 10-038 (Estimation the Population Mean When the Population Standard Deviation is Known)</h3>
+
+        <p>
+          As part of a project to develop better lawn fertilizers, a research chemist wanted to determine the mean weekly growth rate
+          of Kentucky bluegrass, a common type of grass. A sample of 250 blades of grass was measured, and the amount of growth in 1 week
+          was recorded. Assuming that weekly growth is normally distributed with a standard deviation of 0.01 inch, estimate the 99% confidence
+          interval for the mean weekly growth of Kentucky bluegrass in inches.
+        </p>
+
+        <div class="sub-question">
+          <ul class="options">
+            <li>LCL = <span class="correct">0.493</span> in</li>
+            <li>UCL = <span class="correct">0.526</span> in</li>
+          </ul>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>Briefly describe what the interval estimate tells you about the growth of Kentucky bluegrass.</strong></p>
+          <ol class="options">
+            <li>We estimate that the mean growth rate for this type of grass lies within this interval. We expect this type of estimate is correct 99% of the time.</li>
+            <li>We estimate that the mean growth rate for this type of grass lies within this interval. We expect this type of estimate is correct 1% of the time.</li>
+            <li>We estimate that the mean growth rate for this type of grass lies outside this interval. We expect this type of estimate is correct 99% of the time.</li>
+            <li>We estimate that the mean growth rate for this type of grass lies outside this interval. We expect this type of estimate is correct 1% of the time.</li>
+          </ol>
+          <p class="answer-line">Correct Answer: <span class="correct">i</span></p>
+        </div>
+      </div>
+
+      <!-- ===================================== -->
+      <!-- Exercise 10-057 -->
+      <!-- ===================================== -->
+      <div class="question-block">
+        <h3>Exercise 10-057 Algo (Selecting the Sample Size)</h3>
+
+        <p>
+          A medical statistician wants to estimate the average weight loss of people who are on a new diet plan.
+          In a preliminary study, the statistician guesses that the standard deviation of the population of weight losses is about 12 pounds.
+          How large a sample should be taken to estimate the mean weight loss to within 3 pounds, with 90% confidence?
+        </p>
+
+        <p class="answer-line"><span class="correct">44</span></p>
+      </div>
+
+      <!-- ===================================== -->
+      <!-- Exercise 10-058 -->
+      <!-- ===================================== -->
+      <div class="question-block">
+        <h3>Exercise 10-058 Algo (Selecting the Sample Size)</h3>
+
+        <p>
+          The operations manager of a large production plant would like to estimate the average amount of time workers take to assemble a new
+          electronic component. After observing a number of workers assembling similar devices, the manager guesses that the standard deviation
+          is 9 minutes. How large a sample of workers should be taken to estimate the mean assembly time to within 10 seconds?
+          Assume that the confidence level is 99%.
+        </p>
+
+        <p class="answer-line"><span class="correct">19410</span></p>
+      </div>
+
+      <!-- ===================================== -->
+      <!-- Exercise 10-061 -->
+      <!-- ===================================== -->
+      <div class="question-block">
+        <h3>Exercise 10-061 Algo (Selecting the Sample Size)</h3>
+
+        <p>
+          The label on 1-gallon cans of paint states that the amount of paint in the can is sufficient to paint 400 square feet.
+          However, this number is quite variable. In fact, the amount of coverage is known to be approximately normally distributed with
+          a standard deviation of 16 square feet. How large a sample should be taken to estimate the true mean coverage of all 1-gallon cans
+          to within 4 square feet with 95% confidence?
+        </p>
+
+        <p class="answer-line"><span class="correct">62</span></p>
+      </div>
+    </section>
+
+    <nav class="chapter-nav">
+      <a class="nav-btn" href="chapter10menu.html">Back to Chapter 10 Menu</a>
+      <a class="nav-btn" href="../chapter11/chapter11menu.html">Next Chapter</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>MIS510 Coursework Website</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 16 Assignments</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Chapter 16</h1>
+      <p class="subtitle">Assignments</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Chapter 16 Assignments</h1>
+      <p>Assignment exercises and answers</p>
+    </section>
+
+    <section class="section-card">
+      <h2 class="section-title">Section A: Chapter 16 Assignment</h2>
+
+      <div class="question-block">
+        <h3>Exercise 16-016 Algo (Estimating the Coefficients)</h3>
+
+        <p>
+          An economist wanted to investigate the relationship between office rents
+          (the dependent variable) and vacancy rates. The economist took a random sample
+          of monthly office rents and the percentage of vacant office space in 30 different cities.
+        </p>
+
+        <table>
+            <thead>
+              <tr>
+                <th>Rent ($)</th>
+                <th>Vacancy Rate (%)</th>
+                <th>Unemployment Rate (%)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>21.60</td><td>3</td><td>8.2</td></tr>
+              <tr><td>16.50</td><td>11</td><td>11.0</td></tr>
+              <tr><td>14.90</td><td>17</td><td>6.6</td></tr>
+              <tr><td>25.00</td><td>2</td><td>7.0</td></tr>
+              <tr><td>16.70</td><td>7</td><td>8.0</td></tr>
+              <tr><td>11.80</td><td>18</td><td>9.6</td></tr>
+              <tr><td>19.40</td><td>9</td><td>7.1</td></tr>
+              <tr><td>14.50</td><td>12</td><td>7.6</td></tr>
+              <tr><td>11.90</td><td>13</td><td>11.6</td></tr>
+              <tr><td>20.00</td><td>13</td><td>4.7</td></tr>
+              <tr><td>19.70</td><td>8</td><td>5.7</td></tr>
+              <tr><td>17.70</td><td>16</td><td>5.8</td></tr>
+              <tr><td>17.70</td><td>10</td><td>6.4</td></tr>
+              <tr><td>17.00</td><td>3</td><td>8.1</td></tr>
+              <tr><td>19.30</td><td>12</td><td>6.4</td></tr>
+              <tr><td>15.90</td><td>17</td><td>8.2</td></tr>
+              <tr><td>21.00</td><td>3</td><td>9.0</td></tr>
+              <tr><td>12.20</td><td>11</td><td>11.0</td></tr>
+              <tr><td>15.70</td><td>16</td><td>7.2</td></tr>
+              <tr><td>10.70</td><td>20</td><td>9.3</td></tr>
+              <tr><td>17.30</td><td>20</td><td>8.4</td></tr>
+              <tr><td>15.00</td><td>14</td><td>10.4</td></tr>
+              <tr><td>23.30</td><td>8</td><td>7.3</td></tr>
+              <tr><td>19.40</td><td>5</td><td>6.7</td></tr>
+              <tr><td>15.00</td><td>2</td><td>10.2</td></tr>
+              <tr><td>16.20</td><td>20</td><td>7.4</td></tr>
+              <tr><td>18.60</td><td>15</td><td>8.6</td></tr>
+              <tr><td>14.30</td><td>19</td><td>7.9</td></tr>
+              <tr><td>17.60</td><td>2</td><td>8.5</td></tr>
+              <tr><td>19.80</td><td>14</td><td>6.1</td></tr>
+            </tbody>
+          </table>
+
+        <p><strong>Determine the regression line. (Round your answers to two decimal places.)</strong></p>
+        <p class="answer-line"><span class="correct">ŷ = 20.64 − 0.30x</span></p>
+
+        <p><strong>Interpret the coefficients.</strong></p>
+        <p class="answer-line">
+          The slope coefficient tells us that for each additional one percentage point increase
+          in the vacancy rate, rents <span class="correct">decrease</span> on average by
+          <span class="correct">0.30</span>.
+        </p>
+        <p class="answer-line">
+          The y-intercept <span class="correct">cannot be safely interpreted</span>.
+        </p>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 16-028 Algo (Assessing the Model)</h3>
+
+        <p>
+          Attempting to analyze the relationship between advertising and sales, the owner of a furniture store
+          recorded the monthly advertising budget ($thousands) and the sales ($millions) for a sample of 12 months.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Advertising</th>
+              <th>23</th>
+              <th>46</th>
+              <th>60</th>
+              <th>54</th>
+              <th>28</th>
+              <th>33</th>
+              <th>25</th>
+              <th>31</th>
+              <th>36</th>
+              <th>88</th>
+              <th>90</th>
+              <th>99</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Sales</th>
+              <td>9.6</td>
+              <td>11.4</td>
+              <td>12.6</td>
+              <td>9.7</td>
+              <td>8.7</td>
+              <td>12.4</td>
+              <td>11.9</td>
+              <td>11.4</td>
+              <td>12.7</td>
+              <td>13.5</td>
+              <td>14.5</td>
+              <td>15.7</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="sub-question">
+          <p><strong>(a) Determine the standard error of estimate.</strong></p>
+          <p class="answer-line"><span class="correct">1.373</span> thousand</p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(b) Is there evidence of a linear relationship between advertising and sales? (Use a 5% significance level.)</strong></p>
+          <p class="answer-line">H<sub>0</sub>: <span class="correct">β<sub>1</sub> = 0</span></p>
+          <p class="answer-line">H<sub>1</sub>: <span class="correct">β<sub>1</sub> ≠ 0</span></p>
+          <p class="answer-line">Test statistic: <span class="correct">3.79</span></p>
+          <p class="answer-line">p-value: <span class="correct">0.0036</span></p>
+          <p class="answer-line">There <span class="correct">is</span> enough evidence to infer a linear relationship.</p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(c) Determine a confidence interval estimate of β<sub>1</sub>. (Use a 95% confidence level.)</strong></p>
+          <p class="answer-line">LCL = <span class="correct">0.0236</span></p>
+          <p class="answer-line">UCL = <span class="correct">0.0908</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(d) Compute the coefficient of determination.</strong></p>
+          <p class="answer-line">R<sup>2</sup> = <span class="correct">0.5892</span></p>
+          <p class="answer-line"><span class="correct">58.92%</span> of the variation in <span class="correct">sales</span> is explained by the variation in <span class="correct">advertising</span>.</p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(e) Briefly summarize what you have learned in parts (a) through (d).</strong></p>
+          <p class="answer-line"><span class="correct">ii</span></p>
+          <p class="answer-line">
+            <span class="correct">
+              There is significant evidence that a linear relationship between advertising and sales exists,
+              and the confidence interval suggests that the relationship is positive.
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 16-042 Algo (Assessing the Model)</h3>
+
+        <p>
+          An economist wanted to investigate the relationship between office rents
+          (the dependent variable) and vacancy rates.
+        </p>
+
+        <table>
+            <thead>
+              <tr>
+                <th>Rent ($)</th>
+                <th>Vacancy Rate (%)</th>
+                <th>Unemployment Rate (%)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>21.90</td><td>3</td><td>8.2</td></tr>
+              <tr><td>16.30</td><td>11</td><td>11.0</td></tr>
+              <tr><td>15.00</td><td>17</td><td>6.6</td></tr>
+              <tr><td>25.00</td><td>2</td><td>7.0</td></tr>
+              <tr><td>16.80</td><td>7</td><td>8.0</td></tr>
+              <tr><td>11.70</td><td>18</td><td>9.6</td></tr>
+              <tr><td>19.50</td><td>9</td><td>7.1</td></tr>
+              <tr><td>14.70</td><td>12</td><td>7.6</td></tr>
+              <tr><td>12.00</td><td>13</td><td>11.6</td></tr>
+              <tr><td>19.80</td><td>13</td><td>4.7</td></tr>
+              <tr><td>19.80</td><td>8</td><td>5.7</td></tr>
+              <tr><td>17.70</td><td>16</td><td>5.8</td></tr>
+              <tr><td>17.80</td><td>10</td><td>6.4</td></tr>
+              <tr><td>17.20</td><td>3</td><td>8.1</td></tr>
+              <tr><td>19.40</td><td>12</td><td>6.4</td></tr>
+              <tr><td>15.70</td><td>17</td><td>8.2</td></tr>
+              <tr><td>21.40</td><td>3</td><td>9.0</td></tr>
+              <tr><td>12.20</td><td>11</td><td>11.0</td></tr>
+              <tr><td>15.80</td><td>16</td><td>7.2</td></tr>
+              <tr><td>10.90</td><td>20</td><td>9.3</td></tr>
+              <tr><td>17.30</td><td>20</td><td>8.4</td></tr>
+              <tr><td>15.20</td><td>14</td><td>10.4</td></tr>
+              <tr><td>23.30</td><td>8</td><td>7.3</td></tr>
+              <tr><td>19.40</td><td>5</td><td>6.7</td></tr>
+              <tr><td>15.00</td><td>2</td><td>10.2</td></tr>
+              <tr><td>16.40</td><td>20</td><td>7.4</td></tr>
+              <tr><td>18.40</td><td>15</td><td>8.6</td></tr>
+              <tr><td>14.20</td><td>19</td><td>7.9</td></tr>
+              <tr><td>17.80</td><td>2</td><td>8.5</td></tr>
+              <tr><td>19.80</td><td>14</td><td>6.1</td></tr>
+            </tbody>
+          </table>
+
+        <div class="sub-question">
+          <p><strong>(a) Calculate a confidence interval estimate of the decrease in rent for each additional percentage point increase in the vacancy rate. (Use a 95% confidence level.)</strong></p>
+          <p class="answer-line">LCL = <span class="correct">−0.4962</span></p>
+          <p class="answer-line">UCL = <span class="correct">−0.1288</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(b) Determine the coefficient of correlation.</strong></p>
+          <p class="answer-line">r = <span class="correct">−0.5500</span></p>
+          <p class="answer-line">There is a <span class="correct">moderately strong negative</span> linear relationship between the two variables.</p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>Determine the coefficient of determination.</strong></p>
+          <p class="answer-line">R<sup>2</sup> = <span class="correct">0.3025</span></p>
+          <p class="answer-line"><span class="correct">30.25%</span> of the variation in <span class="correct">rents</span> is explained by the variation in <span class="correct">vacancies</span>.</p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 16-082 Algo (Using the Regression Equation)</h3>
+
+        <p>
+          Attempting to analyze the relationship between advertising and sales, the owner of a furniture store
+          recorded the monthly advertising budget ($thousands) and the sales ($millions) for a sample of 12 months.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Advertising</th>
+              <th>23</th>
+              <th>46</th>
+              <th>60</th>
+              <th>54</th>
+              <th>28</th>
+              <th>33</th>
+              <th>25</th>
+              <th>31</th>
+              <th>36</th>
+              <th>88</th>
+              <th>90</th>
+              <th>99</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Sales</th>
+              <td>9.8</td>
+              <td>11.5</td>
+              <td>12.7</td>
+              <td>9.9</td>
+              <td>9.1</td>
+              <td>12.5</td>
+              <td>11.9</td>
+              <td>11.5</td>
+              <td>12.8</td>
+              <td>13.7</td>
+              <td>14.3</td>
+              <td>15.8</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="answer-line">Regression equation: <span class="correct">ŷ = 9.2925 + 0.0554x</span></p>
+
+        <p>
+          Use the regression equation to predict with 90% confidence the sales (in millions of dollars)
+          when the advertising budget is $80,000.
+        </p>
+
+        <p class="answer-line">Lower limit = <span class="correct">$11.18</span> million</p>
+        <p class="answer-line">Upper limit = <span class="correct">$16.27</span> million</p>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 16-094 (Using the Regression Equation)</h3>
+
+        <p>
+          A real estate agent specializing in commercial real estate wanted a more precise method of judging
+          the likely selling price (in $1,000s) of apartment buildings. As a first effort, the price of a number
+          of apartment buildings sold recently and the number of square feet (in 1,000s) in the building were recorded.
+        </p>
+
+        <p>
+          Use technology to calculate a 95% confidence interval estimate of the mean price (in $1,000s)
+          of 56,000 square foot apartment buildings.
+        </p>
+
+        <p class="answer-line">
+          LCL = $ <span class="correct">5818</span> thousand
+        </p>
+        
+        <p class="answer-line">
+          UCL = $ <span class="correct">7818</span> thousand
+        </p>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 16-119 Algo (Regression Diagnostics - I)</h3>
+
+        <p>
+          To determine how the number of housing starts is affected by mortgage rates,
+          an economist recorded the average mortgage rate and the number of housing starts
+          in a large county for the past 10 years.
+        </p>
+
+        <p><strong>Compute the predicted values of y and the residuals. (Round to the nearest integer.)</strong></p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Rate (x)</th>
+              <th>Starts (y)</th>
+              <th>ŷ</th>
+              <th>Residuals</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>8.5</td><td>114</td><td><span class="correct">142</span></td><td><span class="correct">−28</span></td></tr>
+            <tr><td>7.8</td><td>110</td><td><span class="correct">170</span></td><td><span class="correct">−60</span></td></tr>
+            <tr><td>7.6</td><td>187</td><td><span class="correct">178</span></td><td><span class="correct">9</span></td></tr>
+            <tr><td>7.5</td><td>201</td><td><span class="correct">182</span></td><td><span class="correct">19</span></td></tr>
+            <tr><td>8.0</td><td>207</td><td><span class="correct">162</span></td><td><span class="correct">45</span></td></tr>
+            <tr><td>8.4</td><td>166</td><td><span class="correct">146</span></td><td><span class="correct">20</span></td></tr>
+            <tr><td>8.8</td><td>155</td><td><span class="correct">130</span></td><td><span class="correct">25</span></td></tr>
+            <tr><td>8.9</td><td>117</td><td><span class="correct">126</span></td><td><span class="correct">−9</span></td></tr>
+            <tr><td>8.5</td><td>134</td><td><span class="correct">142</span></td><td><span class="correct">−8</span></td></tr>
+            <tr><td>8.0</td><td>151</td><td><span class="correct">162</span></td><td><span class="correct">−11</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 16-120 Algo (Regression Diagnostics - I)</h3>
+
+        <p>
+          Critics of television often refer to the detrimental effects that all the violence shown on television has on children.
+          However, there may be another problem. It may be that watching television also reduces the amount of physical exercise,
+          causing weight gains. A sample of 15 10-year-old children was taken.
+        </p>
+
+        <div class="sub-question">
+          <p><strong>(a) Calculate the predicted values of y. (Round your answers to the nearest integer.)</strong></p>
+          <table>
+            <thead>
+              <tr>
+                <th>Television (x)</th>
+                <th>Overweight (y)</th>
+                <th>ŷ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>43</td><td>18</td><td><span class="correct">16</span></td></tr>
+              <tr><td>35</td><td>6</td><td><span class="correct">8</span></td></tr>
+              <tr><td>25</td><td>0</td><td><span class="correct">−1</span></td></tr>
+              <tr><td>36</td><td>−1</td><td><span class="correct">9</span></td></tr>
+              <tr><td>38</td><td>13</td><td><span class="correct">11</span></td></tr>
+              <tr><td>38</td><td>14</td><td><span class="correct">11</span></td></tr>
+              <tr><td>33</td><td>7</td><td><span class="correct">6</span></td></tr>
+              <tr><td>35</td><td>7</td><td><span class="correct">8</span></td></tr>
+              <tr><td>19</td><td>−9</td><td><span class="correct">−7</span></td></tr>
+              <tr><td>30</td><td>8</td><td><span class="correct">3</span></td></tr>
+              <tr><td>40</td><td>8</td><td><span class="correct">13</span></td></tr>
+              <tr><td>29</td><td>5</td><td><span class="correct">3</span></td></tr>
+              <tr><td>30</td><td>3</td><td><span class="correct">3</span></td></tr>
+              <tr><td>37</td><td>14</td><td><span class="correct">10</span></td></tr>
+              <tr><td>19</td><td>−7</td><td><span class="correct">−7</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(b) Determine the residuals. (Round your answers to the nearest integer.)</strong></p>
+          <table>
+            <thead>
+              <tr>
+                <th>Television (x)</th>
+                <th>Overweight (y)</th>
+                <th>Residuals</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>43</td><td>18</td><td><span class="correct">2</span></td></tr>
+              <tr><td>35</td><td>6</td><td><span class="correct">−2</span></td></tr>
+              <tr><td>25</td><td>0</td><td><span class="correct">1</span></td></tr>
+              <tr><td>36</td><td>−1</td><td><span class="correct">−10</span></td></tr>
+              <tr><td>38</td><td>13</td><td><span class="correct">2</span></td></tr>
+              <tr><td>38</td><td>14</td><td><span class="correct">3</span></td></tr>
+              <tr><td>33</td><td>7</td><td><span class="correct">1</span></td></tr>
+              <tr><td>35</td><td>7</td><td><span class="correct">−1</span></td></tr>
+              <tr><td>19</td><td>−9</td><td><span class="correct">−2</span></td></tr>
+              <tr><td>30</td><td>8</td><td><span class="correct">5</span></td></tr>
+              <tr><td>40</td><td>8</td><td><span class="correct">−5</span></td></tr>
+              <tr><td>29</td><td>5</td><td><span class="correct">2</span></td></tr>
+              <tr><td>30</td><td>3</td><td><span class="correct">0</span></td></tr>
+              <tr><td>37</td><td>14</td><td><span class="correct">4</span></td></tr>
+              <tr><td>19</td><td>−7</td><td><span class="correct">0</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(c) Plot the residuals (on the vertical axis) and the predicted values of y. What does it show?</strong></p>
+          <p class="answer-line">Correct Answer: <span class="correct">iii</span></p>
+          <p class="answer-line">
+            <span class="correct">
+              Aside from one possible outlier, the error term appears to exhibit homoscedasticity.
+            </span>
+          </p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(d) Draw a histogram of the residuals. What does this graph tell you about the error term?</strong></p>
+          <p class="answer-line">Correct Answer: <span class="correct">iii</span></p>
+          <p class="answer-line">
+            <span class="correct">
+              Aside from one possible outlier, the histogram appears roughly bell-shaped,
+              so the error term may be normal.
+            </span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <nav class="chapter-nav">
+      <a class="nav-btn" href="chapter16menu.html">Back to Chapter 16 Menu</a>
+      <a class="nav-btn" href="../chapter17/chapter17menu.html">Next Chapter</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>MIS510 Coursework Website</p>
+    </div>
+  </footer>
+</body>
+</html>

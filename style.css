@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #222222;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .site-header {
+    background-color: #f7f9fc;
+    border-bottom: 1px solid #d9e1ea;
+    padding: 40px 0 30px;
+    text-align: center;
+  }
+  
+  .site-header h1 {
+    font-size: 2.2rem;
+    color: #1f1f1f;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    color: #555555;
+  }
+  
+  .intro-card,
+  .content-card,
+  .section-card {
+    background-color: #ffffff;
+    border: 1px solid #dfe5ec;
+    border-radius: 10px;
+    padding: 24px;
+    margin: 30px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+  
+  .chapters-section {
+    margin: 30px 0 50px;
+  }
+  
+  .chapters-section h2,
+  .intro-card h2,
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 18px;
+    color: #1f1f1f;
+  }
+  
+  .chapter-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 18px;
+  }
+  
+  .chapter-card {
+    display: block;
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 1px solid #dfe5ec;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: #222222;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+  
+  .chapter-card:hover {
+    border-color: #1a73e8;
+    color: #1a73e8;
+    transform: translateY(-2px);
+  }
+  
+  .site-footer {
+    border-top: 1px solid #d9e1ea;
+    background-color: #f7f9fc;
+    text-align: center;
+    padding: 20px 0;
+    color: #666666;
+    font-size: 0.95rem;
+  }
+  
+  /* Chapter page styles */
+  .page-header {
+    margin: 35px 0 20px;
+  }
+  
+  .page-header h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+    color: #1f1f1f;
+  }
+  
+  .page-header p {
+    color: #555555;
+  }
+  
+  .question-block,
+  .excel-block {
+    border: 1px solid #dfe5ec;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fcfdff;
+  }
+  
+  .question-block h3,
+  .excel-block h3 {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    color: #1f1f1f;
+  }
+  
+  .options {
+    margin-top: 12px;
+    padding-left: 20px;
+  }
+  
+  .options li {
+    margin-bottom: 8px;
+  }
+  
+  .correct {
+    color: #1a73e8;
+    font-weight: bold;
+  }
+  
+  .answer-line {
+    margin-top: 14px;
+    font-size: 1rem;
+  }
+  
+  .chapter-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 40px 0 60px;
+    flex-wrap: wrap;
+  }
+  
+  .nav-btn {
+    text-decoration: none;
+    border: 1px solid #dfe5ec;
+    background-color: #ffffff;
+    color: #222222;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+  }
+  
+  .nav-btn:hover {
+    border-color: #1a73e8;
+    color: #1a73e8;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #dfe5ec;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #f7f9fc;
+  }
+  
+  a {
+    color: #1a73e8;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .sub-question {
+    margin-top: 18px;
+  }
+  
+  .sub-question p {
+    margin-bottom: 8px;
+  }
+
+  .image-container {
+    text-align: center;
+    margin: 25px 0;
+  }
+  
+  .image-container img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .image-caption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #555;
+    font-style: italic;
+  }

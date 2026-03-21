@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 4 Excel Assignments</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Chapter 4</h1>
+      <p class="subtitle">Excel Assignments</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Chapter 4 Excel Assignments</h1>
+      <p>Excel activity exercises and answers</p>
+    </section>
+
+    <section class="section-card">
+      <h2 class="section-title">Section B: Chapter 4 Excel Activity</h2>
+
+      <div class="excel-block">
+        <h3>Excel Activity: Return to the Global Warming Question</h3>
+
+        <p>
+          In the last part of the 20th century, scientists developed the theory that the planet was warming
+          and the primary cause was the increasing amounts of carbon dioxide CO<sub>2</sub>, which is the
+          product of burning oil, natural gas, and coal (fossil fuels).
+        </p>
+
+        <p>
+          There are three critical questions that need to be answered in order to resolve the issue:
+        </p>
+
+        <ol class="options">
+          <li>
+            Is the earth actually warming? To answer this question, we need accurate temperature measurements
+            over a large number of years.
+          </li>
+          <li>
+            If the planet is warming, is there a manmade cause or is it natural fluctuation?
+          </li>
+          <li>
+            If the planet is warming, is CO<sub>2</sub> the cause?
+          </li>
+        </ol>
+
+        <p>
+          The generally accepted procedure is to record monthly temperature anomalies. To do so, we calculate
+          the average for each month over many years. We then calculate any deviations between the latest
+          month’s temperature reading and its average.
+        </p>
+
+        <p>Here are the data sets you can work with:</p>
+
+        <ul class="options">
+          <li><strong>C04-01a:</strong> Column 1: Months numbered 1 to 1200; Column 2: Temperature anomalies produced by the National Climatic Data Center</li>
+          <li><strong>C04-01b:</strong> Column 1: Year; Column 2: Month; Column 3: Monthly carbon dioxide levels measured by the Mauna Loa Observatory; Column 4: Temperature anomalies produced by the National Climatic Data Center</li>
+        </ul>
+
+        <p class="answer-line">
+          Spreadsheet file:
+          <a href="assets/spreadsheets/C03-05-c957fa.xlsx" download>The following exercise requires a computer and software for the data file (click here to download) </a>
+        </p>
+
+        <div class="sub-question">
+          <p>
+            <strong>(a)</strong> Use the least squares method to estimate average monthly changes in temperature anomalies.
+            Round your answers to four decimal places.
+          </p>
+          <p class="answer-line">
+            <span class="correct">Temperature Anomalies = -0.4590 + 0.0006 × Month</span>
+          </p>
+        </div>
+
+        <div class="sub-question">
+          <p>
+            <strong>(b)</strong> Calculate the least squares line between CO<sub>2</sub> levels and temperature anomalies.
+            Round your answers to four decimal places.
+          </p>
+          <p class="answer-line">
+            <span class="correct">Temperature Anomalies = -5.8121 + 0.0178 × Carbon Dioxide</span>
+          </p>
+        </div>
+
+        <div class="sub-question">
+          <p>
+            <strong>Calculate the coefficient of correlation between CO<sub>2</sub> levels and temperature anomalies.</strong>
+            Round your answer to four decimal places.
+          </p>
+          <p class="answer-line">
+            <span class="correct">0.6934</span>
+          </p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>Describe your findings.</strong> Round your answer to three decimal places.</p>
+          <p class="answer-line">
+            There is a moderately strong <span class="correct">positive</span> linear relationship between
+            CO<sub>2</sub> levels and temperature anomalies.
+          </p>
+          <p class="answer-line">
+            For each 10 ppm increase in Carbon Dioxide, the temperature anomalies
+            <span class="correct">increase</span> on average by
+            <span class="correct">0.178</span> °C.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <nav class="chapter-nav">
+      <a class="nav-btn" href="chapter4menu.html">Back to Chapter 4 Menu</a>
+      <a class="nav-btn" href="../chapter5/chapter5menu.html">Next Chapter</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>MIS510 Coursework Website</p>
+    </div>
+  </footer>
+</body>
+</html>

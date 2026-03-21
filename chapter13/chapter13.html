@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 13 Assignments</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Chapter 13</h1>
+      <p class="subtitle">Assignments</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Chapter 13 Assignments</h1>
+      <p>Assignment exercises and answers</p>
+    </section>
+
+    <section class="section-card">
+      <h2 class="section-title">Section A: Chapter 13 Assignment</h2>
+
+      <div class="question-block">
+        <h3>Exercise 13-012 Algo (Inference About the Difference Between Two Means: Independent Samples)</h3>
+
+        <p>Use a 10% significance level.</p>
+        <p>
+          A men’s softball league is experimenting with a yellow softball that is easier to see during night games.
+          One way to judge the effectiveness is to count the number of errors. In a preliminary experiment,
+          the yellow softball was used in 10 games and the traditional white softball was used in another 10 games.
+          The number of errors in each game was recorded and is listed here.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th colspan="10">Game Errors</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Yellow</td>
+              <td>6</td><td>1</td><td>7</td><td>6</td><td>1</td><td>6</td><td>2</td><td>9</td><td>3</td><td>10</td>
+            </tr>
+            <tr>
+              <td>White</td>
+              <td>6</td><td>5</td><td>9</td><td>4</td><td>8</td><td>12</td><td>9</td><td>4</td><td>5</td><td>9</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          Can we infer that there are fewer errors on average when the yellow ball is used?
+          (Let population 1 be yellow balls and population 2 be white balls.)
+        </p>
+
+        <div class="sub-question">
+          <p><strong>State the null and alternative hypotheses.</strong></p>
+          <ul class="options">
+            <li>H<sub>0</sub>: μ<sub>1</sub> − μ<sub>2</sub> <span class="correct">=</span> <span class="correct">0</span></li>
+            <li>H<sub>1</sub>: μ<sub>1</sub> − μ<sub>2</sub> <span class="correct">&lt;</span> <span class="correct">0</span></li>
+          </ul>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>Calculate the test statistic.</strong></p>
+          <p class="answer-line"><span class="correct">-1.51</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>Use technology to find the p-value.</strong></p>
+          <p class="answer-line">p-value = <span class="correct">0.0741</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>State your conclusion.</strong></p>
+          <p class="answer-line">There <span class="correct">is</span> enough evidence to infer that there are fewer errors when the yellow ball is used.</p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 13-019 Algo (Inference About the Difference Between Two Means: Independent Samples)</h3>
+
+        <p>The following exercise requires the use of a computer and statistical software.</p>
+        <p>Conduct all tests at the 5% significance level and produce estimates with 95% confidence.</p>
+        <p>
+          The president of Tastee Inc., a baby-food producer, claims that their company’s product is superior to that of their leading competitor
+          because babies gain weight faster with their product. To test this claim, a survey was undertaken.
+          Mothers of newborn babies were asked which baby food they intended to feed their babies.
+          Those who responded Tastee or the leading competitor were asked to keep track of their babies’ weight gains over the next 2 months.
+          There were 15 mothers who indicated that they would feed their babies Tastee and 25 who responded that they would feed their babies
+          the product of the leading competitor. Each baby’s weight gain (in ounces) was recorded.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Tastee</th>
+              <th>Competitor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>31</td><td>27</td></tr>
+            <tr><td>38</td><td>33</td></tr>
+            <tr><td>37</td><td>28</td></tr>
+            <tr><td>35</td><td>32</td></tr>
+            <tr><td>40</td><td>39</td></tr>
+            <tr><td>30</td><td>32</td></tr>
+            <tr><td>30</td><td>38</td></tr>
+            <tr><td>37</td><td>37</td></tr>
+            <tr><td>36</td><td>32</td></tr>
+            <tr><td>38</td><td>31</td></tr>
+            <tr><td>41</td><td>28</td></tr>
+            <tr><td>45</td><td>27</td></tr>
+            <tr><td>42</td><td>26</td></tr>
+            <tr><td>36</td><td>31</td></tr>
+            <tr><td>39</td><td>32</td></tr>
+            <tr><td></td><td>32</td></tr>
+            <tr><td></td><td>38</td></tr>
+            <tr><td></td><td>32</td></tr>
+            <tr><td></td><td>30</td></tr>
+            <tr><td></td><td>28</td></tr>
+            <tr><td></td><td>26</td></tr>
+            <tr><td></td><td>27</td></tr>
+            <tr><td></td><td>32</td></tr>
+            <tr><td></td><td>30</td></tr>
+            <tr><td></td><td>31</td></tr>
+          </tbody>
+        </table>
+
+        <div class="sub-question">
+          <p><strong>(a) Can we conclude, using weight gain as our criterion, that Tastee baby food is indeed superior? (Let population 1 be Tastee and population 2 be the competitor.)</strong></p>
+          <ul class="options">
+            <li>H<sub>0</sub>: μ<sub>1</sub> − μ<sub>2</sub> <span class="correct">=</span> <span class="correct">0</span></li>
+            <li>H<sub>1</sub>: μ<sub>1</sub> − μ<sub>2</sub> <span class="correct">&gt;</span> <span class="correct">0</span></li>
+          </ul>
+          <p class="answer-line">Test statistic: <span class="correct">4.36</span></p>
+          <p class="answer-line">p-value: <span class="correct">0.0001</span></p>
+          <p class="answer-line">There <span class="correct">is</span> enough evidence to infer that Tastee is superior.</p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(b) Use technology to compute a confidence interval to estimate the difference between the mean weight gains (in ounces) of the two products. (Use Tastee − Competitor.)</strong></p>
+          <p class="answer-line">LCL = <span class="correct">3.13</span> oz</p>
+          <p class="answer-line">UCL = <span class="correct">8.55</span> oz</p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(c) Check to ensure that the required condition(s) is satisfied.</strong></p>
+          <p class="answer-line">The conditions <span class="correct">are likely</span> satisfied.</p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 13-116 Algo (Inference About the Difference Between Two Means: Matched Pairs Experiment)</h3>
+
+        <p>This exercise requires the use of a computer and software. The answers to this exercise may be calculated manually.</p>
+        <p>Conduct all tests at the 5% significance level and produce estimates with 95% confidence.</p>
+        <p>
+          Because of the high cost of energy, homeowners in northern climates need to find ways to cut their heating costs.
+          A building contractor wanted to investigate the effect on heating costs of increasing the insulation.
+          As an experiment, a large subdivision built around 1970 with minimal insulation was identified.
+          The plan was to insulate some of the houses and compare the heating costs in the insulated homes with those that remain uninsulated.
+          However, it was clear that the size of the house was a critical factor in determining heating costs.
+          Consequently, the contractor found 15 pairs of identical-sized houses ranging from about 1,200 to 2,800 square feet.
+          One house in each pair was insulated and the other was left unchanged.
+          The heating cost for the following winter season was recorded for each house.
+          <strong>(Use Insulated − Uninsulated.)</strong>
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>House Size</th>
+              <th>Insulated</th>
+              <th>Uninsulated</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1,251</td><td>449</td><td>507</td></tr>
+            <tr><td>1,395</td><td>477</td><td>547</td></tr>
+            <tr><td>1,525</td><td>527</td><td>568</td></tr>
+            <tr><td>1,604</td><td>545</td><td>605</td></tr>
+            <tr><td>1,703</td><td>554</td><td>619</td></tr>
+            <tr><td>1,844</td><td>560</td><td>617</td></tr>
+            <tr><td>1,986</td><td>616</td><td>679</td></tr>
+            <tr><td>2,002</td><td>638</td><td>702</td></tr>
+            <tr><td>2,095</td><td>673</td><td>744</td></tr>
+            <tr><td>2,158</td><td>803</td><td>858</td></tr>
+            <tr><td>2,233</td><td>841</td><td>903</td></tr>
+            <tr><td>2,320</td><td>847</td><td>909</td></tr>
+            <tr><td>2,461</td><td>993</td><td>1,040</td></tr>
+            <tr><td>2,573</td><td>1,100</td><td>1,120</td></tr>
+            <tr><td>2,804</td><td>1,158</td><td>1,200</td></tr>
+          </tbody>
+        </table>
+
+        <div class="sub-question">
+          <p><strong>(a) Do these data allow the contractor to infer that the heating cost for insulated houses is less than that for the uninsulated houses?</strong></p>
+          <ul class="options">
+            <li>H<sub>0</sub>: μ<sub>D</sub> <span class="correct">=</span> <span class="correct">0</span></li>
+            <li>H<sub>1</sub>: μ<sub>D</sub> <span class="correct">&lt;</span> <span class="correct">0</span></li>
+          </ul>
+          <p class="answer-line">Test statistic: <span class="correct">-16.15</span></p>
+          <p class="answer-line">p-value: <span class="correct">0.0000</span></p>
+          <p class="answer-line">There <span class="correct">is</span> enough evidence to infer that heating cost for insulated houses is less than that for uninsulated houses.</p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(b) Determine a confidence interval estimate of the mean savings (in dollars) due to insulating the house.</strong></p>
+          <p class="answer-line">LCL = $<span class="correct">48.39</span></p>
+          <p class="answer-line">UCL = $<span class="correct">63.21</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(c) What is the required condition for the use of the techniques in parts (a) and (b)?</strong></p>
+          <ol class="options">
+            <li>Both populations are required to have equal variances.</li>
+            <li>Both populations are required to be normally distributed.</li>
+            <li><span class="correct">Differences are required to be normally distributed.</span></li>
+            <li>Both populations are required to have unequal variances.</li>
+          </ol>
+          <p class="answer-line">Correct Answer: <span class="correct">iii</span></p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 13-123 Algo (Inference About the Difference Between Two Means: Matched Pairs Experiment)</h3>
+
+        <p>This exercise requires the use of a computer and software. The answers to this exercise may be calculated manually.</p>
+        <p>Conduct all tests at the 5% significance level and produce estimates with 95% confidence.</p>
+        <p>
+          In the last few years, a number of web-based companies that offer job placement services have been created.
+          One such company wanted to investigate the job offers recent MBAs were obtaining.
+          In particular, they wanted to know whether finance majors were being offered higher salaries than marketing majors.
+        </p>
+        <p>
+          Suppose that another experiment is conducted. Finance and marketing MBA majors were matched according to their undergraduate GPA.
+          From each they obtained the highest salary offer (including benefits).
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Finance</th>
+              <th>Marketing</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>37,281</td><td>20,792</td></tr>
+            <tr><td>58,267</td><td>19,081</td></tr>
+            <tr><td>42,784</td><td>24,229</td></tr>
+            <tr><td>44,016</td><td>22,607</td></tr>
+            <tr><td>70,509</td><td>58,541</td></tr>
+            <tr><td>72,269</td><td>49,578</td></tr>
+            <tr><td>85,819</td><td>66,925</td></tr>
+            <tr><td>39,677</td><td>33,051</td></tr>
+            <tr><td>84,379</td><td>48,914</td></tr>
+            <tr><td>76,375</td><td>79,989</td></tr>
+            <tr><td>52,395</td><td>77,413</td></tr>
+            <tr><td>96,258</td><td>78,474</td></tr>
+            <tr><td>63,577</td><td>82,396</td></tr>
+            <tr><td>33,345</td><td>9,572</td></tr>
+            <tr><td>94,219</td><td>118,937</td></tr>
+            <tr><td>35,402</td><td>51,412</td></tr>
+            <tr><td>42,947</td><td>43,697</td></tr>
+            <tr><td>60,198</td><td>26,149</td></tr>
+            <tr><td>67,096</td><td>110,021</td></tr>
+            <tr><td>98,988</td><td>128,231</td></tr>
+            <tr><td>75,843</td><td>80,634</td></tr>
+            <tr><td>70,850</td><td>55,371</td></tr>
+            <tr><td>96,679</td><td>98,848</td></tr>
+            <tr><td>68,670</td><td>95,397</td></tr>
+            <tr><td>54,037</td><td>30,945</td></tr>
+          </tbody>
+        </table>
+
+        <p>Can we infer from these data that finance majors attract higher salary offers than marketing majors? <strong>(Use Finance − Marketing.)</strong></p>
+
+        <div class="sub-question">
+          <p><strong>State the null and alternative hypotheses.</strong></p>
+          <ul class="options">
+            <li>H<sub>0</sub>: μ<sub>D</sub> <span class="correct">=</span> <span class="correct">0</span></li>
+            <li>H<sub>1</sub>: μ<sub>D</sub> <span class="correct">&gt;</span> <span class="correct">0</span></li>
+          </ul>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>Calculate the test statistic.</strong></p>
+          <p class="answer-line"><span class="correct">0.97</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>Use technology to find the p-value.</strong></p>
+          <p class="answer-line">p-value = <span class="correct">0.1710</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>State your conclusion.</strong></p>
+          <p class="answer-line">There <span class="correct">is not</span> enough evidence to infer that finance majors attract higher salary offers than do marketing majors.</p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 13-139 (Inference About the Ratio of Two Variances)</h3>
+
+        <p>This exercise requires a computer and software for the data file Xr13-139. The answers to this exercise may be calculated manually.</p>
+        <p>Use a 5% significance level.</p>
+        <p>
+          A new highway has just been completed and the government must decide on speed limits.
+          There are several possible choices. However, on advice from police who monitor traffic the objective was to reduce the variation in speeds,
+          which it is thought to contribute to the number of collisions.
+          It is decided to conduct an experiment to acquire more information.
+          Signs are posted for 1 week indicating that the speed limit is 70 mph.
+          A random sample of cars’ speeds is measured.
+          During the second week, signs are posted indicating that the maximum speed is 70 mph and that the minimum speed is 60 mph.
+          Once again a random sample of speeds is measured.
+          Can we infer that limiting the minimum and maximum speeds reduces the variation in speeds?
+          (Let population 1 be Week 1 and population 2 be Week 2.)
+        </p>
+
+        <div class="sub-question">
+          <p><strong>State the null and alternative hypotheses.</strong></p>
+          <ul class="options">
+            <li>H<sub>0</sub>: σ<sub>1</sub><sup>2</sup> / σ<sub>2</sub><sup>2</sup> <span class="correct">=</span> <span class="correct">1</span></li>
+            <li>H<sub>1</sub>: σ<sub>1</sub><sup>2</sup> / σ<sub>2</sub><sup>2</sup> <span class="correct">&gt;</span> <span class="correct">1</span></li>
+          </ul>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>Calculate the test statistic.</strong></p>
+          <p class="answer-line"><span class="correct">1.53</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>the p-value is</strong></p>
+          <p class="answer-line">
+            <span class="correct">0.0183</span>          </p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>State your conclusion.</strong></p>
+          <p class="answer-line">There <span class="correct">is</span> enough evidence to infer that limiting the minimum and maximum speeds reduces the variation in speeds.</p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 13-153 Algo (Inference About the Difference Between Two Population Proportions)</h3>
+
+        <p>You may need to use the appropriate appendix table to answer this question.</p>
+        <p>Conduct all tests at the 5% significance level and all estimates at the 95% confidence level.</p>
+        <p>
+          A firm has classified its customers in two ways: (1) according to whether the account is overdue and (2) whether the account is new (less than 12 months) or old.
+          To acquire information about which customers are paying on time and which are overdue, a random sample of 292 customer accounts was drawn.
+          Each was categorized as a new account (less than 12 months) and old, and whether the customer has paid or is overdue.
+          The results are summarized next.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>New Account</th>
+              <th>Old Account</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Sample size</td><td>84</td><td>207</td></tr>
+            <tr><td>Overdue account</td><td>11</td><td>47</td></tr>
+          </tbody>
+        </table>
+
+        <p>
+          Is there enough evidence to infer that new and old accounts are different with respect to overdue accounts?
+          (Let population 1 be new accounts and population 2 be old accounts.)
+        </p>
+
+        <div class="sub-question">
+          <p><strong>State the null and alternative hypotheses.</strong></p>
+          <ul class="options">
+            <li>H<sub>0</sub>: p<sub>1</sub> − p<sub>2</sub> <span class="correct">=</span> <span class="correct">0</span></li>
+            <li>H<sub>1</sub>: p<sub>1</sub> − p<sub>2</sub> <span class="correct">≠</span> <span class="correct">0</span></li>
+          </ul>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>Calculate the test statistic.</strong></p>
+          <p class="answer-line"><span class="correct">-1.86</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>Find the p-value.</strong></p>
+          <p class="answer-line"><span class="correct">0.0628</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>State your conclusion.</strong></p>
+          <p class="answer-line">There <span class="correct">is not</span> enough evidence to conclude that new and old accounts are different with respect to overdue accounts.</p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 13-155 Algo (Inference About the Difference Between Two Population Proportions)</h3>
+
+        <p>You may need to use the appropriate appendix table to answer this question.</p>
+        <p>Conduct all tests at the 5% significance level and all estimates at the 95% confidence level.</p>
+        <p>
+          Surveys have been widely used by politicians around the world as a way of monitoring the opinions of the electorate.
+          Six months ago, a survey was undertaken to determine the degree of support for a national party leader.
+          Of a sample of 1,200, 57% indicated that they would vote for this politician.
+          This month, another survey of 830 voters revealed that 47% now support the leader.
+          (Let population 1 be 6 months ago and population 2 be now. Use 6 months ago − now.)
+        </p>
+
+        <div class="sub-question">
+          <p><strong>(a) Can we infer that the national leader’s popularity has decreased?</strong></p>
+          <ul class="options">
+            <li>H<sub>0</sub>: p<sub>1</sub> − p<sub>2</sub> <span class="correct">=</span> <span class="correct">0</span></li>
+            <li>H<sub>1</sub>: p<sub>1</sub> − p<sub>2</sub> <span class="correct">&gt;</span> <span class="correct">0</span></li>
+          </ul>
+          <p class="answer-line">Test statistic: <span class="correct">4.44</span></p>
+          <p class="answer-line">p-value: <span class="correct">0.0000</span></p>
+          <p class="answer-line">There <span class="correct">is</span> enough evidence to infer that the leader’s popularity has decreased.</p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(b) Can we infer that the national leader’s popularity has decreased by more than 5%?</strong></p>
+          <ul class="options">
+            <li>H<sub>0</sub>: p<sub>1</sub> − p<sub>2</sub> <span class="correct">=</span> <span class="correct">0.05</span></li>
+            <li>H<sub>1</sub>: p<sub>1</sub> − p<sub>2</sub> <span class="correct">&gt;</span> <span class="correct">0.05</span></li>
+          </ul>
+          <p class="answer-line">Test statistic: <span class="correct">2.23</span></p>
+          <p class="answer-line">p-value: <span class="correct">0.0130</span></p>
+          <p class="answer-line">There <span class="correct">is</span> enough evidence to infer that the leader’s popularity has decreased by more than 5%.</p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(c) Estimate the decrease in percentage support between now and 6 months ago.</strong></p>
+          <p class="answer-line">LCL = <span class="correct">0.0560</span></p>
+          <p class="answer-line">UCL = <span class="correct">0.1440</span></p>
+        </div>
+      </div>
+    </section>
+
+    <nav class="chapter-nav">
+      <a class="nav-btn" href="chapter13menu.html">Back to Chapter 13 Menu</a>
+      <a class="nav-btn" href="../chapter14/chapter14menu.html">Next Chapter</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>MIS510 Coursework Website</p>
+    </div>
+  </footer>
+</body>
+</html>

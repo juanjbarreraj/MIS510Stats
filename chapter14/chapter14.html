@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 14 Assignments</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Chapter 14</h1>
+      <p class="subtitle">Assignments</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Chapter 14 Assignments</h1>
+      <p>Assignment exercises and answers</p>
+    </section>
+
+    <section class="section-card">
+      <h2 class="section-title">Section A: Chapter 14 Assignment</h2>
+
+      <div class="question-block">
+        <h3>Exercise 14-008 Algo (One-Way Analysis of Variance)</h3>
+
+        <p>
+          A management scientist believes that one way of judging whether a computer came equipped with enough memory
+          is to determine the age of the computer. In a preliminary study, random samples of computer users were asked
+          to identify the brand of computer and its age (in months). The categorized responses are shown here.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>IBM</th>
+              <th>Dell</th>
+              <th>HP</th>
+              <th>Other</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>16</td><td>7</td><td>7</td><td>23</td></tr>
+            <tr><td>11</td><td>3</td><td>16</td><td>11</td></tr>
+            <tr><td>12</td><td>20</td><td>9</td><td>14</td></tr>
+          </tbody>
+        </table>
+
+        <p>
+          Do these data provide sufficient evidence to conclude that there are differences in age between the computer brands?
+          (Use α = 0.05.)
+        </p>
+
+        <div class="sub-question">
+          <p><strong>State the null and alternative hypotheses.</strong></p>
+          <ol class="options">
+            <li>H<sub>0</sub>: At least two means differ. H<sub>1</sub>: μ<sub>1</sub> = μ<sub>2</sub> = μ<sub>3</sub> = μ<sub>4</sub></li>
+            <li>H<sub>0</sub>: μ<sub>1</sub> ≠ μ<sub>2</sub> ≠ μ<sub>3</sub> ≠ μ<sub>4</sub>. H<sub>1</sub>: At least two means are the same.</li>
+            <li>H<sub>0</sub>: At least two means differ. H<sub>1</sub>: μ<sub>1</sub> ≠ μ<sub>2</sub> ≠ μ<sub>3</sub> ≠ μ<sub>4</sub></li>
+            <li><span class="correct">H<sub>0</sub>: μ<sub>1</sub> = μ<sub>2</sub> = μ<sub>3</sub> = μ<sub>4</sub>. H<sub>1</sub>: At least two means differ.</span></li>
+          </ol>
+          <p class="answer-line">Correct Answer: <span class="correct">iv</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>Calculate the test statistic.</strong></p>
+          <p class="answer-line"><span class="correct">0.60</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>Use technology to find the p-value.</strong></p>
+          <p class="answer-line">p-value = <span class="correct">0.6331</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>State your conclusion.</strong></p>
+          <p class="answer-line">There <span class="correct">is not</span> enough evidence to conclude that there are differences in age between the computer brands.</p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 14-015 (One-Way Analysis of Variance)</h3>
+
+        <p>
+          Do entering students into the programs Physical Sciences, Biological and Biomedical Sciences,
+          and Mathematics and Statistics have similar SAT Mathematics scores?
+          Is there enough statistical evidence to conclude that there are differences in Mathematics SAT scores between the three programs?
+          (Use α = 0.05.)
+        </p>
+
+        <div class="sub-question">
+          <p><strong>State the null and alternative hypotheses.</strong></p>
+          <ol class="options">
+            <li><span class="correct">H<sub>0</sub>: μ<sub>1</sub> = μ<sub>2</sub> = μ<sub>3</sub>. H<sub>1</sub>: At least two means differ.</span></li>
+            <li>H<sub>0</sub>: μ<sub>1</sub> ≠ μ<sub>2</sub> ≠ μ<sub>3</sub>. H<sub>1</sub>: At least two means are the same.</li>
+            <li>H<sub>0</sub>: At least two means differ. H<sub>1</sub>: μ<sub>1</sub> = μ<sub>2</sub> = μ<sub>3</sub></li>
+            <li>H<sub>0</sub>: At least two means differ. H<sub>1</sub>: μ<sub>1</sub> ≠ μ<sub>2</sub> ≠ μ<sub>3</sub></li>
+          </ol>
+          <p class="answer-line">Correct Answer: <span class="correct">i</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>Calculate the test statistic.</strong></p>
+          <p class="answer-line"><span class="correct">7.21</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>Use technology to find the p-value.</strong></p>
+          <p class="answer-line">p-value = <span class="correct">0.0011</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>State your conclusion.</strong></p>
+          <p class="answer-line">There <span class="correct">is</span> enough statistical evidence to conclude that there are differences in Mathematics SAT scores between the three programs.</p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 14-073 Algo (Multiple Comparisons)</h3>
+
+        <p>
+          Police cars, ambulances, and other emergency vehicles are required to carry road flares.
+          One of the most important features of flares is their burning times.
+          To help decide which of four brands on the market to use, a police laboratory technician measured
+          the burning time for a random sample of 10 flares of each brand. The results were recorded to the nearest minute.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Flare A</th>
+              <th>Flare B</th>
+              <th>Flare C</th>
+              <th>Flare D</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>52</td><td>46</td><td>57</td><td>59</td></tr>
+            <tr><td>65</td><td>62</td><td>70</td><td>34</td></tr>
+            <tr><td>77</td><td>47</td><td>65</td><td>58</td></tr>
+            <tr><td>61</td><td>56</td><td>60</td><td>51</td></tr>
+            <tr><td>50</td><td>50</td><td>68</td><td>54</td></tr>
+            <tr><td>57</td><td>71</td><td>59</td><td>49</td></tr>
+            <tr><td>58</td><td>54</td><td>61</td><td>55</td></tr>
+            <tr><td>72</td><td>57</td><td>59</td><td>42</td></tr>
+            <tr><td>70</td><td>66</td><td>63</td><td>52</td></tr>
+            <tr><td>52</td><td>64</td><td>54</td><td>62</td></tr>
+          </tbody>
+        </table>
+
+        <div class="sub-question">
+          <p><strong>(a) Can we conclude that differences exist between the burning times of the four brands of flares? (Use α = 0.05.)</strong></p>
+          <ol class="options">
+            <li>H<sub>0</sub>: At least two means differ. H<sub>1</sub>: μ<sub>1</sub> = μ<sub>2</sub> = μ<sub>3</sub> = μ<sub>4</sub></li>
+            <li>H<sub>0</sub>: μ<sub>1</sub> ≠ μ<sub>2</sub> ≠ μ<sub>3</sub> ≠ μ<sub>4</sub>. H<sub>1</sub>: At least two means are the same.</li>
+            <li>H<sub>0</sub>: At least two means differ. H<sub>1</sub>: μ<sub>1</sub> ≠ μ<sub>2</sub> ≠ μ<sub>3</sub> ≠ μ<sub>4</sub></li>
+            <li><span class="correct">H<sub>0</sub>: μ<sub>1</sub> = μ<sub>2</sub> = μ<sub>3</sub> = μ<sub>4</sub>. H<sub>1</sub>: At least two means differ.</span></li>
+          </ol>
+          <p class="answer-line">Correct Answer: <span class="correct">iv</span></p>
+          <p class="answer-line">Test statistic: <span class="correct">3.50</span></p>
+          <p class="answer-line">p-value: <span class="correct">0.0251</span></p>
+          <p class="answer-line">There <span class="correct">is</span> enough evidence to infer that differences exist between the flares with respect to burning times.</p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(b) Apply Fisher’s LSD method with the Bonferroni adjustment.</strong></p>
+          <table>
+            <thead>
+              <tr>
+                <th>Treatment</th>
+                <th>LSD (in minutes)</th>
+                <th>Absolute Difference (in minutes)</th>
+                <th>Population Means Differ?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Flare A, Flare B</td><td><span class="correct">9.90</span></td><td><span class="correct">4.1</span></td><td>No</td></tr>
+              <tr><td>Flare A, Flare C</td><td><span class="correct">9.90</span></td><td><span class="correct">0.2</span></td><td>No</td></tr>
+              <tr><td>Flare A, Flare D</td><td><span class="correct">9.90</span></td><td><span class="correct">9.8</span></td><td>No</td></tr>
+              <tr><td>Flare B, Flare C</td><td><span class="correct">9.90</span></td><td><span class="correct">4.3</span></td><td>No</td></tr>
+              <tr><td>Flare B, Flare D</td><td><span class="correct">9.90</span></td><td><span class="correct">5.7</span></td><td>No</td></tr>
+              <tr><td>Flare C, Flare D</td><td><span class="correct">9.90</span></td><td><span class="correct">10.0</span></td><td>Yes</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(c) Repeat part (b) using Tukey’s method.</strong></p>
+          <p class="answer-line">ω = <span class="correct">9.55</span> minutes</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Treatment</th>
+                <th>Absolute Difference (in minutes)</th>
+                <th>Population Means Differ?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Flare A, Flare B</td><td><span class="correct">4.1</span></td><td>No</td></tr>
+              <tr><td>Flare A, Flare C</td><td><span class="correct">0.2</span></td><td>No</td></tr>
+              <tr><td>Flare A, Flare D</td><td><span class="correct">9.8</span></td><td>Yes</td></tr>
+              <tr><td>Flare B, Flare C</td><td><span class="correct">4.3</span></td><td>No</td></tr>
+              <tr><td>Flare B, Flare D</td><td><span class="correct">5.7</span></td><td>No</td></tr>
+              <tr><td>Flare C, Flare D</td><td><span class="correct">10.0</span></td><td>Yes</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 14-085 (Multiple Comparisons)</h3>
+
+        <p>
+          Students who are about to start their careers are naturally curious about the incomes they may be able to earn upon graduation.
+          A head hunter wanted to acquire information about the different occupations. A survey was conducted wherein randomly sampled wage and salary workers
+          were asked to report the type of job and their after-tax income. The occupations are manager and professional (treatment 1);
+          technical, sales, and clerical (treatment 2); service (treatment 3); and construction, operators, and laborers (treatment 4).
+          Is there sufficient statistical evidence to conclude that there are differences in after-tax income between workers in the four occupational categories?
+          Use Tukey’s multiple comparison method. (Use α = 0.05.)
+        </p>
+
+        <div class="sub-question">
+          <p><strong>Find the value of ω (in dollars).</strong></p>
+          <p class="answer-line">
+            I can correct the pairwise differences shown from the screenshot, but I still need the raw Xr14-085 output or the ANOVA table to compute the exact ω value.
+          </p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>Carry out the rest of the Tukey method.</strong></p>
+          <table>
+            <thead>
+              <tr>
+                <th>Treatment</th>
+                <th>Absolute Difference (in dollars)</th>
+                <th>Population Means Differ?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1, 2</td><td><span class="correct">$45,801</span></td><td>Yes</td></tr>
+              <tr><td>1, 3</td><td><span class="correct">$57,153</span></td><td>Yes</td></tr>
+              <tr><td>1, 4</td><td><span class="correct">$52,769</span></td><td>Yes</td></tr>
+              <tr><td>2, 3</td><td><span class="correct">$11,352</span></td><td>Yes</td></tr>
+              <tr><td>2, 4</td><td><span class="correct">$6,968</span></td><td>No</td></tr>
+              <tr><td>3, 4</td><td><span class="correct">$4,384</span></td><td>No</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 14-100 Algo (Randomized Block Two-Way Analysis of Variance)</h3>
+
+        <p>
+          How well do diets work? In a preliminary study, 20 people who were more than 50 pounds overweight were recruited to compare four diets.
+          The people were matched by age. The oldest four became block 1, the next oldest four became block 2, and so on.
+          The number of pounds that each person lost is listed in the following table.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Block</th>
+              <th>Diet 1</th>
+              <th>Diet 2</th>
+              <th>Diet 3</th>
+              <th>Diet 4</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>6</td><td>1</td><td>7</td><td>9</td></tr>
+            <tr><td>2</td><td>5</td><td>6</td><td>9</td><td>11</td></tr>
+            <tr><td>3</td><td>5</td><td>11</td><td>8</td><td>3</td></tr>
+            <tr><td>4</td><td>8</td><td>10</td><td>17</td><td>8</td></tr>
+            <tr><td>5</td><td>8</td><td>9</td><td>16</td><td>13</td></tr>
+          </tbody>
+        </table>
+
+        <p>Can we infer at the 1% significance level that there are differences between the four diets?</p>
+
+        <div class="sub-question">
+          <p><strong>State the null and alternative hypotheses.</strong></p>
+          <ol class="options">
+            <li>H<sub>0</sub>: μ<sub>1</sub> ≠ μ<sub>2</sub> ≠ μ<sub>3</sub> ≠ μ<sub>4</sub>. H<sub>1</sub>: At least two means are the same.</li>
+            <li>H<sub>0</sub>: μ<sub>1</sub> ≠ μ<sub>2</sub> ≠ … ≠ μ<sub>5</sub>. H<sub>1</sub>: At least two means are the same.</li>
+            <li>H<sub>0</sub>: μ<sub>1</sub> = μ<sub>2</sub> = … = μ<sub>5</sub>. H<sub>1</sub>: At least two means differ.</li>
+            <li><span class="correct">H<sub>0</sub>: μ<sub>1</sub> = μ<sub>2</sub> = μ<sub>3</sub> = μ<sub>4</sub>. H<sub>1</sub>: At least two means differ.</span></li>
+          </ol>
+          <p class="answer-line">Correct Answer: <span class="correct">iv</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>Calculate the test statistic.</strong></p>
+          <p class="answer-line"><span class="correct">2.37</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>Use technology to find the p-value.</strong></p>
+          <p class="answer-line">p-value = <span class="correct">0.1223</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>State your conclusion.</strong></p>
+          <p class="answer-line">There <span class="correct">is not</span> enough evidence to conclude there are differences between the four diets.</p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 14-103 (Randomized Block Two-Way Analysis of Variance)</h3>
+
+        <p>
+          A recruiter for a computer company would like to determine whether there are differences in sales ability between business,
+          arts, and science graduates. The recruiter takes a random sample of 20 business graduates who have been working for the company
+          for the past 2 years. Each is then matched with an arts graduate and a science graduate with similar educational and working experience.
+          The commission earned by each (in $1,000s) in the last year was recorded.
+        </p>
+
+        <div class="sub-question">
+          <p><strong>(a) Is there sufficient evidence to allow the recruiter to conclude that there are differences in sales ability between the holders of the three types of degrees?</strong></p>
+          <ol class="options">
+            <li><span class="correct">H<sub>0</sub>: μ<sub>1</sub> = μ<sub>2</sub> = μ<sub>3</sub>. H<sub>1</sub>: At least two means differ.</span></li>
+            <li>H<sub>0</sub>: μ<sub>1</sub> ≠ μ<sub>2</sub> ≠ μ<sub>3</sub>. H<sub>1</sub>: At least two means are the same.</li>
+            <li>H<sub>0</sub>: μ<sub>1</sub> ≠ μ<sub>2</sub> ≠ … ≠ μ<sub>20</sub>. H<sub>1</sub>: At least two means are the same.</li>
+            <li>H<sub>0</sub>: μ<sub>1</sub> = μ<sub>2</sub> = … = μ<sub>20</sub>. H<sub>1</sub>: At least two means differ.</li>
+          </ol>
+          <p class="answer-line">Correct Answer: <span class="correct">i</span></p>
+          <p class="answer-line">Test statistic: <span class="correct">0.86</span></p>
+          <p class="answer-line">p-value: <span class="correct">0.4313</span></p>
+          <p class="answer-line">There <span class="correct">is not</span> enough evidence to conclude that there are differences in sales ability between the holders of the three degrees.</p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(b) Conduct a test to determine whether an independent samples design would have been a better choice.</strong></p>
+          <ol class="options">
+            <li>H<sub>0</sub>: μ<sub>1</sub> = μ<sub>2</sub> = μ<sub>3</sub>. H<sub>1</sub>: At least two means differ.</li>
+            <li>H<sub>0</sub>: μ<sub>1</sub> ≠ μ<sub>2</sub> ≠ μ<sub>3</sub>. H<sub>1</sub>: At least two means are the same.</li>
+            <li>H<sub>0</sub>: μ<sub>1</sub> ≠ μ<sub>2</sub> ≠ … ≠ μ<sub>20</sub>. H<sub>1</sub>: At least two means are the same.</li>
+            <li><span class="correct">H<sub>0</sub>: μ<sub>1</sub> = μ<sub>2</sub> = … = μ<sub>20</sub>. H<sub>1</sub>: At least two means differ.</span></li>
+          </ol>
+          <p class="answer-line">Correct Answer: <span class="correct">iv</span></p>
+          <p class="answer-line">Test statistic: <span class="correct">26.64</span></p>
+          <p class="answer-line">p-value: <span class="correct">0.0000</span></p>
+          <p class="answer-line">There <span class="correct">is</span> enough evidence to indicate that there are differences between the blocks of students. The independent samples design <span class="correct">would not</span> be recommended.</p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(c) What are the required conditions for the test in part (a)?</strong></p>
+          <p class="answer-line">
+            The commissions for each type of degree are required to be <span class="correct">normally distributed</span>
+            with <span class="correct">the same</span> variance.
+          </p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(d) Are the required conditions satisfied?</strong></p>
+          <ol class="options">
+            <li>No. The condition regarding the variances appears to be violated since the largest treatment variance is over two times the lowest.</li>
+            <li>No. The condition regarding the distribution of the data appears to be violated since only the histogram for science graduates appears sufficiently skewed. The other two histograms, especially the one for business graduates, are not especially skewed.</li>
+            <li>No. The condition regarding the distribution of the data appears to be violated since only the histogram for arts graduates appears sufficiently uniform. The other two histograms, especially the one for business graduates, are not especially uniform.</li>
+            <li><span class="correct">No. The condition regarding the distribution of the data appears to be violated since only the histogram for business graduates appears sufficiently bell-shaped. The other two histograms, especially the one for science graduates, are not especially bell-shaped.</span></li>
+            <li>No. The condition regarding the variances appears to be violated since the largest treatment variance is less than two times the lowest.</li>
+            <li>Yes. All the necessary conditions are clearly satisfied.</li>
+          </ol>
+          <p class="answer-line">Correct Answer: <span class="correct">iv</span></p>
+        </div>
+      </div>
+
+      <div class="question-block">
+        <h3>Exercise 14-115 (Two-Factor Analysis of Variance)</h3>
+
+        <p>
+          Detergent manufacturers frequently make claims about the effectiveness of their products.
+          A consumer-protection service decided to test the five best selling brands of detergent, where each manufacturer claims that its product
+          produces the “whitest whites” in all water temperatures. One hundred fifty white sheets were equally soiled.
+          Thirty sheets were washed in each brand—10 with cold water, 10 with warm water, and 10 with hot water.
+          After washing, the “whiteness” scores for each sheet were measured with laser equipment.
+        </p>
+
+        <ul class="options">
+          <li>Column A: Water temperature code</li>
+          <li>Column B: Scores for detergent 1</li>
+          <li>Column C: Scores for detergent 2</li>
+          <li>Column D: Scores for detergent 3</li>
+          <li>Column E: Scores for detergent 4</li>
+          <li>Column F: Scores for detergent 5</li>
+        </ul>
+
+        <div class="sub-question">
+          <p><strong>(a) What are the factors in this experiment?</strong></p>
+          <p class="answer-line">Factor A is <span class="correct">type of detergent</span> and factor B is <span class="correct">water temperature</span>.</p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(b) What is the response variable?</strong></p>
+          <p class="answer-line"><span class="correct">whiteness score</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(c) Identify the levels of each factor.</strong></p>
+          <p class="answer-line">There are <span class="correct">5</span> levels of factor A and <span class="correct">3</span> levels of factor B.</p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>(d) Perform the statistical analysis.</strong></p>
+          <p><strong>Test to determine whether factors A and B interact.</strong></p>
+          <ol class="options">
+            <li>H<sub>0</sub>: Factors A and B show weak interaction. H<sub>1</sub>: Factors A and B show strong interaction.</li>
+            <li>H<sub>0</sub>: Factors A and B interact to affect the mean responses. H<sub>1</sub>: Factors A and B do not interact to affect the mean responses.</li>
+            <li>H<sub>0</sub>: Factors A and B show strong interaction. H<sub>1</sub>: Factors A and B show weak interaction.</li>
+            <li><span class="correct">H<sub>0</sub>: Factors A and B do not interact to affect the mean responses. H<sub>1</sub>: Factors A and B do interact to affect the mean responses.</span></li>
+          </ol>
+          <p class="answer-line">Correct Answer: <span class="correct">iv</span></p>
+          <p class="answer-line">Test statistic: <span class="correct">2.78</span></p>
+          <p class="answer-line">p-value: <span class="correct">0.0071</span></p>
+          <p class="answer-line">There <span class="correct">is</span> enough evidence to conclude that factors A and B interact.</p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>Use technology to find the p-value for the test to determine whether differences exist between the levels of factor A.</strong></p>
+          <p class="answer-line"><span class="correct">NA</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>Use technology to find the p-value for the test to determine whether differences exist between the levels of factor B.</strong></p>
+          <p class="answer-line"><span class="correct">NA</span></p>
+        </div>
+
+        <div class="sub-question">
+          <p><strong>Do there appear to be differences between the levels of factor A and factor B?</strong></p>
+          <ol class="options">
+            <li>There is enough evidence to conclude that differences exist between the levels of both factors.</li>
+            <li>There is enough evidence to conclude that differences exist between the levels of factor A but not enough to say the same for factor B.</li>
+            <li>There is enough evidence to conclude that differences exist between the levels of factor B but not enough to say the same for factor A.</li>
+            <li>There is not enough evidence to conclude that differences exist between the levels of either factor.</li>
+            <li><span class="correct">Testing for differences within the individual factors is irrelevant because there is evidence of interaction.</span></li>
+            <li>Testing for differences within the individual factors is irrelevant because there is not evidence of interaction.</li>
+          </ol>
+          <p class="answer-line">Correct Answer: <span class="correct">v</span></p>
+        </div>
+      </div>
+    </section>
+
+    <nav class="chapter-nav">
+      <a class="nav-btn" href="chapter14menu.html">Back to Chapter 14 Menu</a>
+      <a class="nav-btn" href="../chapter16/chapter16menu.html">Next Chapter</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>MIS510 Coursework Website</p>
+    </div>
+  </footer>
+</body>
+</html>
